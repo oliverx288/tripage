@@ -1,24 +1,154 @@
-header{
-     background-color: white;
+/* ==================
+   RESET
+   ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================
+   VARIABLES Y BASE
+   ================== */
+:root {
+    --color-rojo: #E24B4A;
+    --color-naranja: #EF9F27;
+    --color-amarillo: #F5D547;
+    --color-verde: #97C459;
+    --color-azul: #5B9BD5;
+    --color-navy: #0D1B2A;
+    --color-gris-claro: #F5F5F5;
+    --color-texto: #333333;
+    --color-texto-suave: #777777;
+}
+
+body {
+    font-family: serif;
+    background-color: white;
+    background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: var(--color-texto);
+}
+
+/* ==================
+   HEADER
+   ================== */
+header {
+    background-color: white;
     border: 1px solid #333333;
     border-radius: 12px;
     padding: 24px 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: 600;
-    color: #0D1B2A;
 }
 
 header div {
     display: flex;
     gap: 24px;
 }
-body {
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-navy);
+}
+
+header div span {
+    font-size: 14px;
+    color: var(--color-texto-suave);
+}
+
+/* ==================
+   CONTENIDO PRINCIPAL
+   ================== */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+main > p {
+    font-size: 16px;
+    color: var(--color-texto-suave);
+    margin-bottom: 24px;
+}
+
+/* ==================
+   GRID DE CASOS
+   ================== */
+.grid-casos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.caso {
     background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.caso:hover {
+    border-color: var(--color-navy);
+}
+
+.caso > span:first-child {
+    font-size: 11px;
+    color: var(--color-texto-suave);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.caso h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.caso ul {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.caso ul li {
+    font-size: 13px;
+    color: var(--color-texto-suave);
+    padding: 3px 0;
+    padding-left: 12px;
+    position: relative;
+}
+
+.caso ul li::before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    color: var(--color-texto-suave);
+}
+
+.caso > span:last-child {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: var(--color-gris-claro);
+    color: var(--color-texto);
+}
+
+/* ==================
+   RESPONSIVE
+   ================== */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 16px 24px;
+    }
+
+    .grid-casos {
+        grid-template-columns: 1fr;
+    }
 }
