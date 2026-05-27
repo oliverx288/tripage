@@ -1,15 +1,11 @@
-/* ==================
-   RESET
-   ================== */
+/* RESET*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==================
-   VARIABLES Y BASE
-   ================== */
+/*VARIABLES Y BASE */
 :root {
     --color-rojo: #E24B4A;
     --color-naranja: #EF9F27;
@@ -30,9 +26,7 @@ body {
     color: var(--color-texto);
 }
 
-/* ==================
-   HEADER
-   ================== */
+/*HEADER*/
 header {
     background-color: white;
     border-radius: 12px;
@@ -40,6 +34,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header > div:last-child {
@@ -102,9 +99,7 @@ header > div:last-child > span {
     cursor: pointer;
 }
 
-/* ==================
-   CONTENIDO PRINCIPAL
-   ================== */
+/*CONTENIDO PRINCIPAL */
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -122,9 +117,7 @@ main {
     border-radius: 8px;
 }
 
-/* ==================
-   FILTROS
-   ================== */
+/* FILTROS */
 .filtros {
     display: flex;
     gap: 8px;
@@ -153,9 +146,7 @@ main {
     border-color: var(--color-navy);
 }
 
-/* ==================
-   GRID DE CASOS
-   ================== */
+/*GRID DE CASOS */
 .grid-casos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -174,12 +165,7 @@ main {
     border-color: var(--color-navy);
 }
 
-.caso > span:first-child {
-    font-size: 11px;
-    color: var(--color-texto-suave);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
+
 
 .caso h2 {
     font-size: 16px;
@@ -196,17 +182,17 @@ main {
 
 .caso ul li {
     font-size: 13px;
-    color: var(--color-texto-suave);
+    color: #444444;
     padding: 3px 0;
     padding-left: 12px;
     position: relative;
 }
 
 .caso ul li::before {
-    content: "·";
+    content: "›";
     position: absolute;
     left: 0;
-    color: var(--color-texto-suave);
+    color: var(--color-navy);
 }
 
 .caso > span:last-child {
@@ -219,16 +205,12 @@ main {
     color: var(--color-texto);
 }
 
-/* ==================
-   PANTALLAS — OCULTO
-   ================== */
+/* PANTALLAS — OCULTO*/
 .oculto {
     display: none;
 }
 
-/* ==================
-   PANTALLAS 2 Y 3 — HEADER
-   ================== */
+/*PANTALLAS 2 Y 3 : HEADER */
 .caso-header {
     background-color: white;
     border-radius: 12px;
@@ -274,9 +256,7 @@ main {
     border-radius: 20px;
 }
 
-/* ==================
-   PANTALLA 2 — CONTENIDO
-   ================== */
+/*PANTALLA 2 — CONTENIDO */
 .caso-contenido {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -294,13 +274,14 @@ main {
 .caso-constantes {
     background-color: white;
     border: 1px solid #E0E0E0;
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 24px;
 }
 
 .caso-seccion-titulo {
-    font-size: 11px;
-    color: var(--color-texto-suave);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-navy);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     display: block;
@@ -320,17 +301,17 @@ main {
 
 .caso-clinico ul li {
     font-size: 13px;
-    color: var(--color-texto-suave);
+    color: #444444;
     padding: 3px 0;
     padding-left: 12px;
     position: relative;
 }
 
 .caso-clinico ul li::before {
-    content: "·";
+    content: "›";
     position: absolute;
     left: 0;
-    color: var(--color-texto-suave);
+    color: var(--color-navy);
 }
 
 .constantes-grid {
@@ -342,18 +323,19 @@ main {
 
 .constante {
     background-color: var(--color-gris-claro);
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 7px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
 }
 
 .constante-valor {
     font-size: 24px;
     font-weight: 600;
     color: var(--color-navy);
+    font-family: 'Inter', sans-serif;
 }
 
 .constante-label {
@@ -361,18 +343,16 @@ main {
     color: var(--color-texto-suave);
 }
 
-/* ==================
-   MANCHESTER
-   ================== */
+/*MANCHESTER*/
 .manchester {
     background-color: white;
     border: 1px solid #E0E0E0;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 24px;
 }
 
 .manchester > p {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--color-texto-suave);
     margin-bottom: 16px;
 }
@@ -380,13 +360,13 @@ main {
 .manchester-botones {
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: 9px;
 }
 
 .manchester-btn {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    border-radius: 60%;
+    width: 100px;
+    height: 100px;
     border: none;
     cursor: pointer;
     display: flex;
@@ -398,12 +378,12 @@ main {
 }
 
 .nivel-numero {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .nivel-nombre {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -446,14 +426,12 @@ main {
 }
 
 .tiempo-texto {
-    font-size: 12px;
-    color: var(--color-texto-suave);
+    font-size: 13px;
+    color: var(--color-rojo);
     white-space: nowrap;
 }
 
-/* ==================
-   PANTALLA 2 — ESTADO ERROR
-   ================== */
+/* PANTALLA 2 — ESTADO ERROR */
 .mensaje-error {
     font-size: 28px;
     font-weight: 700;
