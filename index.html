@@ -5,129 +5,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TriPage</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <span class="logo">TriPage</span>
+        <div class="logo">
+            <img src="logo.png" alt="TriPage logo">
+            <div class="logo-texto">
+                <span class="logo-nombre">TriPage</span>
+                <span class="logo-by">por Irene Oliver</span>
+            </div>
+        </div>
         <div>
-            <span>Modo práctica</span>
-            <span>50 casos completados</span>
+            <span>5 casos completados</span>
+            <div class="idioma-selector">
+                <span class="idioma-activo">ES</span>
+            </div>
         </div>
     </header>
+
     <main>
-        <p>Elige un caso para clasificar:</p>
-        <div class="grid-casos">
 
-            <div class="caso">
-                <span>caso #1</span>
-                <h2>Varón, 68 años</h2>
-                <ul>
-                    <li>Dolor torácico opresivo</li>
-                    <li>Sudoración fría</li>
-                    <li>Disnea leve</li>
-                </ul>
-                <span>Difícil</span>
+        <!-- PANTALLA 1 -->
+        <div id="pantalla-1">
+            <p>Elige un caso para clasificar</p>
+            <div class="filtros">
+                <button class="filtro activo">Todos</button>
+                <button class="filtro">Básico</button>
+                <button class="filtro">Intermedio</button>
+                <button class="filtro">Difícil</button>
+                <button class="filtro">Avanzado</button>
+            </div>
+            <div class="grid-casos">
+
+                <div class="caso" data-dificultad="Difícil">
+                    <span>caso #1</span>
+                    <h2>Varón, 68 años</h2>
+                    <ul>
+                        <li>Dolor torácico opresivo</li>
+                        <li>Sudoración fría</li>
+                        <li>Disnea leve</li>
+                    </ul>
+                    <span>Difícil</span>
+                </div>
+
+                <div class="caso" data-dificultad="Avanzado">
+                    <span>caso #2</span>
+                    <h2>Mujer, 34 años</h2>
+                    <ul>
+                        <li>Fiebre 39.2°C</li>
+                        <li>Cefalea intensa</li>
+                        <li>Rigidez de nuca</li>
+                    </ul>
+                    <span>Avanzado</span>
+                </div>
+
+                <div class="caso" data-dificultad="Difícil">
+                    <span>caso #3</span>
+                    <h2>Mujer, 45 años</h2>
+                    <ul>
+                        <li>Dolor abdominal difuso</li>
+                        <li>Náuseas sin vómitos</li>
+                        <li>Fiebre 38.1°C</li>
+                    </ul>
+                    <span>Difícil</span>
+                </div>
+
+                <div class="caso" data-dificultad="Intermedio">
+                    <span>caso #4</span>
+                    <h2>Varón, 22 años</h2>
+                    <ul>
+                        <li>Dolor torácico punzante que aumenta al respirar</li>
+                        <li>Sin disnea</li>
+                    </ul>
+                    <span>Intermedio</span>
+                </div>
+
+                <div class="caso" data-dificultad="Difícil">
+                    <span>caso #5</span>
+                    <h2>Varón, 78 años</h2>
+                    <ul>
+                        <li>Confusión brusca</li>
+                        <li>Sin fiebre</li>
+                        <li>Incontinencia urinaria</li>
+                    </ul>
+                    <span>Difícil</span>
+                </div>
+
+                <div class="caso" data-dificultad="Intermedio">
+                    <span>caso #6</span>
+                    <h2>Mujer, 32 años</h2>
+                    <ul>
+                        <li>Palpitaciones súbitas</li>
+                        <li>Mareo sin pérdida de conciencia</li>
+                        <li>Ansiedad referida</li>
+                    </ul>
+                    <span>Intermedio</span>
+                </div>
+
+                <div class="caso" data-dificultad="Avanzado">
+                    <span>caso #7</span>
+                    <h2>Niño, 3 años</h2>
+                    <ul>
+                        <li>Fiebre 40°C</li>
+                        <li>Manchas rojizas en piel</li>
+                        <li>Irritabilidad extrema</li>
+                    </ul>
+                    <span>Avanzado</span>
+                </div>
+
+                <div class="caso" data-dificultad="Avanzado">
+                    <span>caso #8</span>
+                    <h2>Varón, 55 años</h2>
+                    <ul>
+                        <li>Dolor en mandíbula y brazo izquierdo</li>
+                        <li>Sudoración</li>
+                        <li>Sin dolor torácico</li>
+                    </ul>
+                    <span>Avanzado</span>
+                </div>
+
+                <div class="caso" data-dificultad="Difícil">
+                    <span>caso #9</span>
+                    <h2>Mujer, 67 años</h2>
+                    <ul>
+                        <li>Caída al suelo sin causa aparente</li>
+                        <li>Recuperación espontánea</li>
+                        <li>No recuerda lo ocurrido</li>
+                    </ul>
+                    <span>Difícil</span>
+                </div>
+
+                <div class="caso" data-dificultad="Avanzado">
+                    <span>caso #10</span>
+                    <h2>Varón, 40 años</h2>
+                    <ul>
+                        <li>Cefalea "la peor de su vida"</li>
+                        <li>Inicio brusco en segundos</li>
+                        <li>Sin fiebre ni rigidez de nuca</li>
+                    </ul>
+                    <span>Avanzado</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PANTALLA 2 -->
+        <div id="pantalla-2" class="error">
+
+
+            <div class="mensaje-error">Respuesta incorrecta</div>
+
+            <div class="caso-header">
+                <div class="caso-header-izquierda">
+                    <span class="caso-numero">Caso #01</span>
+                </div>
             </div>
 
-            <div class="caso">
-                <span>caso #2 — activo</span>
-                <h2>Mujer, 34 años</h2>
-                <ul>
-                    <li>Fiebre 39.2°C</li>
-                    <li>Cefalea intensa</li>
-                    <li>Rigidez de nuca</li>
-                </ul>
-                <span>Avanzado</span>
+            <div class="caso-contenido">
+                <div class="caso-clinico">
+                    <span class="caso-seccion-titulo">Presentación clínica</span>
+                    <h2>Varón, 68 años</h2>
+                    <ul>
+                        <li>Dolor torácico opresivo de inicio brusco</li>
+                        <li>Sudoración fría profusa</li>
+                        <li>Disnea leve en reposo</li>
+                        <li>Sin pérdida de conciencia</li>
+                        <li>Tiempo de evolución: 45 minutos</li>
+                    </ul>
+                </div>
+
+                <div class="caso-constantes">
+                    <span class="caso-seccion-titulo">Constantes vitales</span>
+                    <div class="constantes-grid">
+                        <div class="constante">
+                            <span class="constante-valor">38.1°</span>
+                            <span class="constante-label">Temp.</span>
+                        </div>
+                        <div class="constante">
+                            <span class="constante-valor">112</span>
+                            <span class="constante-label">FC bpm</span>
+                        </div>
+                        <div class="constante">
+                            <span class="constante-valor">148/92</span>
+                            <span class="constante-label">TA</span>
+                        </div>
+                        <div class="constante">
+                            <span class="constante-valor">96%</span>
+                            <span class="constante-label">SatO₂</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="caso">
-                <span>caso #3</span>
-                <h2>Mujer, 45 años</h2>
-                <ul>
-                    <li>Dolor abdominal difuso</li>
-                    <li>Náuseas sin vómitos</li>
-                    <li>Fiebre 38.1°C</li>
-                </ul>
-                <span>Difícil</span>
+            <div class="manchester">
+                <p>Selecciona el nivel de triaje Manchester:</p>
+                <div class="manchester-botones">
+                    <button class="manchester-btn nivel-1">
+                        <span class="nivel-numero">I</span>
+                        <span class="nivel-nombre">Inmediato</span>
+                    </button>
+                    <button class="manchester-btn nivel-2">
+                        <span class="nivel-numero">II</span>
+                        <span class="nivel-nombre">Muy urgente</span>
+                    </button>
+                    <button class="manchester-btn nivel-3">
+                        <span class="nivel-numero">III</span>
+                        <span class="nivel-nombre">Urgente</span>
+                    </button>
+                    <button class="manchester-btn nivel-4">
+                        <span class="nivel-numero">IV</span>
+                        <span class="nivel-nombre">Menos urgente</span>
+                    </button>
+                    <button class="manchester-btn nivel-5">
+                        <span class="nivel-numero">V</span>
+                        <span class="nivel-nombre">No urgente</span>
+                    </button>
+                </div>
+                <div class="barra-tiempo-wrapper">
+                    <div class="barra-tiempo">
+                        <div class="barra-progreso"></div>
+                    </div>
+                    <span class="tiempo-texto">⏱ 2:41 restantes</span>
+                </div>
             </div>
 
-            <div class="caso">
-                <span>caso #4</span>
-                <h2>Varón, 22 años</h2>
-                <ul>
-                    <li>Dolor torácico punzante que aumenta al respirar</li>
-                    <li>Sin disnea</li>
-                </ul>
-                <span>Intermedio</span>
-            </div>
-
-            <div class="caso">
-                <span>caso #5</span>
-                <h2>Varón, 78 años</h2>
-                <ul>
-                    <li>Confusión brusca</li>
-                    <li>Sin fiebre</li>
-                    <li>Incontinencia urinaria</li>
-                </ul>
-                <span>Difícil</span>
-            </div>
-
-            <div class="caso">
-                <span>caso #6</span>
-                <h2>Mujer, 32 años</h2>
-                <ul>
-                    <li>Palpitaciones súbitas</li>
-                    <li>Mareo sin pérdida de conciencia</li>
-                    <li>Ansiedad referida</li>
-                </ul>
-                <span>Intermedio</span>
-            </div>
-
-            <div class="caso">
-                <span>caso #7</span>
-                <h2>Niño, 3 años</h2>
-                <ul>
-                    <li>Fiebre 40°C</li>
-                    <li>Manchas rojizas en piel</li>
-                    <li>Irritabilidad extrema</li>
-                </ul>
-                <span>Avanzado</span>
-            </div>
-
-            <div class="caso">
-                <span>caso #8</span>
-                <h2>Varón, 55 años</h2>
-                <ul>
-                    <li>Dolor en mandíbula y brazo izquierdo</li>
-                    <li>Sudoración</li>
-                    <li>Sin dolor torácico</li>
-                </ul>
-                <span>Avanzado</span>
-            </div>
-
-            <div class="caso">
-                <span>caso #9</span>
-                <h2>Mujer, 67 años</h2>
-                <ul>
-                    <li>Caída al suelo sin causa aparente</li>
-                    <li>Recuperación espontánea</li>
-                    <li>No recuerda lo ocurrido</li>
-                </ul>
-                <span>Difícil</span>
-            </div>
-
-            <div class="caso">
-                <span>caso #10</span>
-                <h2>Varón, 40 años</h2>
-                <ul>
-                    <li>Cefalea "la peor de su vida"</li>
-                    <li>Inicio brusco en segundos</li>
-                    <li>Sin fiebre ni rigidez de nuca</li>
-                </ul>
-                <span>Avanzado</span>
+            <!-- caja respuesta correcta — visible solo en estado error -->
+            <div class="respuesta-correcta-box">
+                <div class="nivel-badge nivel-1">
+                    <span class="nivel-romano">I</span>
+                </div>
+                <div class="respuesta-correcta-info">
+                    <span class="respuesta-correcta-titulo">La respuesta correcta era Nivel I</span>
+                    <span class="respuesta-correcta-tipo"> Riesgo Vital Inmediato</span>
+                </div>
             </div>
 
         </div>
+
+        <!-- PANTALLA 3 — CORRECTO -->
+        <div id="pantalla-3">
+
+            <div class="caso-header">
+                <div class="caso-header-izquierda">
+                    <span class="caso-numero">Caso #01</span>
+                </div>
+                <span class="resultado-correcto">Correcto</span>
+            </div>
+
+            <div class="resultado-nivel">
+                <div class="nivel-badge nivel-1">
+                    <span class="nivel-romano">I</span>
+                </div>
+                <div class="resultado-nivel-info">
+                    <span class="resultado-nivel-titulo">Nivel I</span>
+                    <span class="resultado-nivel-subtitulo">Inmediato · Riesgo vital inmediato</span>
+                </div>
+            </div>
+
+            <div class="resultado-explicacion">
+                <div class="resultado-porque">
+                    <span class="resultado-porque-titulo">✓ ¿Por qué nivel I?</span>
+                    <p>El dolor torácico opresivo con sudoración fría y disnea en un varón de 68 años es un síndrome coronario agudo hasta que se demuestre lo contrario. La presentación clásica obliga a activar el código infarto de forma inmediata. Cada minuto sin reperfusión equivale a pérdida irreversible de miocardio.</p>
+                </div>
+            </div>
+
+            <div class="resultado-sabias">
+                <span class="sabias-titulo">¿Sabías que?</span>
+                <p>En España muere una persona por cardiopatía isquémica cada 4 minutos. El tiempo puerta-balón debe ser inferior a 90 minutos, cada minuto cuenta.</p>
+            </div>
+
+        </div>
+
     </main>
 </body>
 </html>
