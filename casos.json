@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "titulo": "Varón, 68 años",
+    "dificultad": "Avanzado",
+    "sintomas": [
+      "Dolor torácico opresivo de inicio brusco",
+      "Sudoración fría profusa",
+      "Disnea leve en reposo",
+      "Tiempo de evolución: 45 minutos"
+    ],
+    "constantes": {
+      "temperatura": "38.1°",
+      "fc": "112",
+      "ta": "148/92",
+      "sato2": "96%"
+    },
+    "respuesta_correcta": 2,
+    "explicacion": "Dolor torácico opresivo con sudoración fría en varón de 68 años es un síndrome coronario agudo hasta que se demuestre lo contrario. Nivel II porque está hemodinámicamente estable, pero requiere atención en menos de 10 minutos.",
+    "sabias_que": "En España muere una persona por cardiopatía isquémica cada 4 minutos. El tiempo puerta-balón debe ser inferior a 90 minutos."
+  },
+  {
+    "id": 2,
+    "titulo": "Mujer, 34 años",
+    "dificultad": "Avanzado",
+    "sintomas": [
+      "Fiebre 39.2°C",
+      "Cefalea intensa de inicio progresivo",
+      "Rigidez de nuca",
+      "Fotofobia"
+    ],
+    "constantes": {
+      "temperatura": "39.2°",
+      "fc": "98",
+      "ta": "110/70",
+      "sato2": "98%"
+    },
+    "respuesta_correcta": 2,
+    "explicacion": "La tríada fiebre + cefalea intensa + rigidez de nuca es meningitis bacteriana hasta que se demuestre lo contrario. Nivel II — riesgo vital si no se trata en menos de 10 minutos.",
+    "sabias_que": "La meningitis bacteriana puede matar en menos de 24 horas. El tratamiento antibiótico debe iniciarse antes de la punción lumbar si hay signos de herniación."
+  },
+  {
+    "id": 3,
+    "titulo": "Mujer, 45 años",
+    "dificultad": "Difícil",
+    "sintomas": [
+      "Dolor abdominal difuso que migra a fosa iliaca derecha",
+      "Náuseas sin vómitos",
+      "Fiebre 38.1°C",
+      "Dolor aumenta con el movimiento"
+    ],
+    "constantes": {
+      "temperatura": "38.1°",
+      "fc": "92",
+      "ta": "120/78",
+      "sato2": "99%"
+    },
+    "respuesta_correcta": 3,
+    "explicacion": "Dolor abdominal con migración a FID, fiebre y dolor al movimiento sugiere apendicitis aguda. Nivel III — urgente, sin riesgo vital inmediato pero requiere evaluación en menos de 60 minutos.",
+    "sabias_que": "La apendicitis es la causa más frecuente de abdomen agudo quirúrgico. El signo de Blumberg (dolor a la descompresión) sugiere irritación peritoneal."
+  },
+  {
+    "id": 4,
+    "titulo": "Varón, 22 años",
+    "dificultad": "Intermedio",
+    "sintomas": [
+      "Dolor torácico punzante que aumenta al respirar",
+      "Inicio tras ejercicio intenso",
+      "Sin disnea en reposo",
+      "Sin sudoración"
+    ],
+    "constantes": {
+      "temperatura": "36.8°",
+      "fc": "88",
+      "ta": "118/72",
+      "sato2": "97%"
+    },
+    "respuesta_correcta": 3,
+    "explicacion": "Dolor pleurítico en varón joven y delgado tras esfuerzo sugiere neumotórax espontáneo. Nivel III — requiere radiografía urgente pero hemodinámicamente estable.",
+    "sabias_que": "El neumotórax espontáneo primario es más frecuente en hombres jóvenes, altos y delgados. Si la SatO2 cae bruscamente puede convertirse en Nivel I."
+  },
+  {
+    "id": 5,
+    "titulo": "Varón, 78 años",
+    "dificultad": "Difícil",
+    "sintomas": [
+      "Confusión brusca de inicio súbito",
+      "Sin fiebre",
+      "Incontinencia urinaria",
+      "Debilidad en extremidad derecha"
+    ],
+    "constantes": {
+      "temperatura": "36.9°",
+      "fc": "82",
+      "ta": "168/95",
+      "sato2": "95%"
+    },
+    "respuesta_correcta": 2,
+    "explicacion": "Confusión brusca con déficit motor en anciano hipertenso es un ictus hasta que se demuestre lo contrario. Nivel II — la ventana terapéutica del ictus isquémico es de 4,5 horas.",
+    "sabias_que": "Cada minuto sin tratamiento en un ictus se pierden 1,9 millones de neuronas. El código ictus debe activarse en menos de 10 minutos."
+  },
+  {
+    "id": 6,
+    "titulo": "Mujer, 32 años",
+    "dificultad": "Intermedio",
+    "sintomas": [
+      "Palpitaciones súbitas de inicio brusco",
+      "Mareo sin pérdida de conciencia",
+      "Ansiedad referida",
+      "Sin dolor torácico"
+    ],
+    "constantes": {
+      "temperatura": "36.7°",
+      "fc": "178",
+      "ta": "105/65",
+      "sato2": "98%"
+    },
+    "respuesta_correcta": 2,
+    "explicacion": "Taquicardia a 178 lpm con inicio brusco y mareo sugiere taquicardia supraventricular. Nivel II — frecuencia cardíaca muy elevada con hipotensión leve requiere atención urgente.",
+    "sabias_que": "La maniobra de Valsalva puede revertir una TSV en el 20-40% de los casos. Si no responde se usa adenosina intravenosa."
+  },
+{
+  "id": 7,
+  "titulo": "Niño, 3 años",
+  "dificultad": "Avanzado",
+  "sintomas": [
+    "Fiebre 40°C de inicio brusco",
+    "Manchas rojizas no blanqueables en piel",
+    "Irritabilidad extrema",
+    "Rechazo de la luz"
+  ],
+  "constantes": {
+    "temperatura": "40.0°",
+    "fc": "158",
+    "ta": "82/48",
+    "sato2": "95%"
+  },
+  "respuesta_correcta": 1,
+  "explicacion": "Fiebre con petequias no blanqueables en niño con signos de shock — taquicardia e hipotensión — es meningococcemia en shock séptico. Nivel I inmediato.",
+  "sabias_que": "La prueba del vaso: si las manchas no desaparecen al presionar con un vaso transparente son petequias — señal de emergencia absoluta."
+}
+  {
+    "id": 8,
+    "titulo": "Varón, 55 años",
+    "dificultad": "Avanzado",
+    "sintomas": [
+      "Dolor en mandíbula y brazo izquierdo",
+      "Sudoración profusa",
+      "Náuseas",
+      "Sin dolor torácico referido"
+    ],
+    "constantes": {
+      "temperatura": "37.1°",
+      "fc": "95",
+      "ta": "155/90",
+      "sato2": "95%"
+    },
+    "respuesta_correcta": 2,
+    "explicacion": "IAM atípico sin dolor torácico clásico. El dolor irradiado a mandíbula y brazo izquierdo con sudoración en varón de mediana edad es un equivalente anginoso. Nivel II.",
+    "sabias_que": "El 30% de los infartos no presentan dolor torácico clásico. Las mujeres, diabéticos y ancianos son más propensos a presentaciones atípicas."
+  },
+  {
+    "id": 9,
+    "titulo": "Mujer, 67 años",
+    "dificultad": "Difícil",
+    "sintomas": [
+      "Caída al suelo sin causa aparente",
+      "Recuperación espontánea en 2 minutos",
+      "No recuerda lo ocurrido",
+      "Sin pródromos"
+    ],
+    "constantes": {
+      "temperatura": "36.8°",
+      "fc": "58",
+      "ta": "130/82",
+      "sato2": "97%"
+    },
+    "respuesta_correcta": 3,
+    "explicacion": "Síncope sin causa aparente con bradicardia en anciana requiere evaluación urgente para descartar causa cardíaca. Nivel III — estable pero necesita ECG y monitorización.",
+    "sabias_que": "El síncope de causa cardíaca tiene una mortalidad del 18-33% al año si no se trata. El ECG es la primera prueba a realizar."
+  },
+  {
+    "id": 10,
+    "titulo": "Varón, 40 años",
+    "dificultad": "Avanzado",
+    "sintomas": [
+      "Cefalea thunderclap — la peor de su vida",
+      "Inicio brusco en segundos",
+      "Sin fiebre ni rigidez de nuca",
+      "Vómitos en escopetazo"
+    ],
+    "constantes": {
+      "temperatura": "37.0°",
+      "fc": "78",
+      "ta": "160/95",
+      "sato2": "99%"
+    },
+    "respuesta_correcta": 2,
+    "explicacion": "Cefalea en trueno de inicio súbito es una hemorragia subaracnoidea hasta que se demuestre lo contrario. Nivel II — aunque esté alerta, el riesgo de resangrado es crítico.",
+    "sabias_que": "La hemorragia subaracnoidea causa el 5% de todos los ictus pero tiene una mortalidad del 40-50%. La TC craneal urgente es la primera prueba."
+  },
+  {
+    "id": 11,
+    "titulo": "Niña, 8 años",
+    "dificultad": "Básico",
+    "sintomas": [
+      "Fiebre 38.5°C",
+      "Dolor de garganta",
+      "Dificultad leve para tragar",
+      "Sin dificultad respiratoria"
+    ],
+    "constantes": {
+      "temperatura": "38.5°",
+      "fc": "95",
+      "ta": "100/65",
+      "sato2": "99%"
+    },
+    "respuesta_correcta": 4,
+    "explicacion": "Faringoamigdalitis con fiebre moderada sin signos de gravedad. Nivel IV — estándar, puede esperar hasta 120 minutos. Sin compromiso de vía aérea ni signos de sepsis.",
+    "sabias_que": "El 80% de las faringitis son de origen vírico y no requieren antibióticos. El test de Streptococo rápido ayuda a seleccionar quién se beneficia del tratamiento."
+  },
+  {
+    "id": 12,
+    "titulo": "Varón, 35 años",
+    "dificultad": "Básico",
+    "sintomas": [
+      "Torcedura de tobillo tras caída",
+      "Dolor moderado al caminar",
+      "Inflamación leve",
+      "Sin deformidad visible"
+    ],
+    "constantes": {
+      "temperatura": "36.6°",
+      "fc": "74",
+      "ta": "122/76",
+      "sato2": "99%"
+    },
+    "respuesta_correcta": 4,
+    "explicacion": "Esguince de tobillo sin deformidad ni impotencia funcional total. Nivel IV — estándar. Las reglas de Ottawa ayudan a decidir si se necesita radiografía.",
+    "sabias_que": "Las reglas de Ottawa tienen una sensibilidad del 99% para descartar fractura de tobillo. Si puede cargar peso, la probabilidad de fractura es muy baja."
+  },
+  {
+    "id": 13,
+    "titulo": "Mujer, 28 años",
+    "dificultad": "Básico",
+    "sintomas": [
+      "Dolor al orinar",
+      "Frecuencia urinaria aumentada",
+      "Orina turbia",
+      "Sin fiebre"
+    ],
+    "constantes": {
+      "temperatura": "36.9°",
+      "fc": "72",
+      "ta": "115/72",
+      "sato2": "99%"
+    },
+    "respuesta_correcta": 5,
+    "explicacion": "Infección urinaria baja sin fiebre ni signos de afectación sistémica. Nivel V — no urgente. Puede esperar hasta 240 minutos o ser derivada a atención primaria.",
+    "sabias_que": "Las infecciones urinarias bajas son 50 veces más frecuentes en mujeres. Sin fiebre ni dolor lumbar no hay indicación de ingreso hospitalario."
+  },
+  {
+    "id": 14,
+    "titulo": "Varón, 50 años",
+    "dificultad": "Básico",
+    "sintomas": [
+      "Dolor lumbar tras esfuerzo",
+      "Contractura muscular",
+      "Sin irradiación a piernas",
+      "Sin pérdida de fuerza"
+    ],
+    "constantes": {
+      "temperatura": "36.7°",
+      "fc": "76",
+      "ta": "128/80",
+      "sato2": "99%"
+    },
+    "respuesta_correcta": 5,
+    "explicacion": "Lumbalgia mecánica aguda sin signos neurológicos ni banderas rojas. Nivel V — no urgente. El 90% de las lumbalgias mecánicas se resuelven en 6 semanas.",
+    "sabias_que": "Las banderas rojas en lumbalgia incluyen: fiebre, pérdida de peso, trauma previo, déficit neurológico o antecedentes de cáncer. Si hay alguna, la urgencia sube."
+  },
+  {
+    "id": 15,
+    "titulo": "Mujer, 72 años",
+    "dificultad": "Intermedio",
+    "sintomas": [
+      "Disnea progresiva en las últimas 24 horas",
+      "Ortopnea — duerme con 3 almohadas",
+      "Edemas en piernas",
+      "Sin fiebre"
+    ],
+    "constantes": {
+      "temperatura": "36.8°",
+      "fc": "102",
+      "ta": "158/95",
+      "sato2": "92%"
+    },
+    "respuesta_correcta": 2,
+    "explicacion": "Disnea con ortopnea, edemas y SatO2 del 92% sugiere insuficiencia cardíaca descompensada. Nivel II — SatO2 baja con taquicardia requiere atención urgente en menos de 10 minutos.",
+    "sabias_que": "La insuficiencia cardíaca afecta al 2% de la población adulta. La SatO2 por debajo del 94% en reposo es un signo de alarma que requiere oxigenoterapia inmediata."
+  },
+  {
+    "id": 16,
+    "titulo": "Varón, 62 años",
+    "dificultad": "Intermedio",
+    "sintomas": [
+      "Hemoptisis — tos con sangre",
+      "Pérdida de peso no intencionada",
+      "Fumador de 40 años",
+      "Sin fiebre"
+    ],
+    "constantes": {
+      "temperatura": "37.0°",
+      "fc": "88",
+      "ta": "135/85",
+      "sato2": "94%"
+    },
+    "respuesta_correcta": 3,
+    "explicacion": "Hemoptisis en fumador de larga evolución con pérdida de peso requiere descartar neoplasia pulmonar. Nivel III — urgente pero estable hemodinámicamente.",
+    "sabias_que": "El cáncer de pulmón es el tumor con mayor mortalidad en España. La hemoptisis es uno de los síntomas de presentación en el 25% de los casos."
+  },
+  {
+    "id": 17,
+    "titulo": "Mujer, 25 años",
+    "dificultad": "Intermedio",
+    "sintomas": [
+      "Dolor abdominal en hipocondrio derecho",
+      "Náuseas tras ingesta de comida grasa",
+      "Sin fiebre",
+      "Dolor tipo cólico"
+    ],
+    "constantes": {
+      "temperatura": "36.9°",
+      "fc": "84",
+      "ta": "118/74",
+      "sato2": "99%"
+    },
+    "respuesta_correcta": 3,
+    "explicacion": "Cólico biliar típico con dolor en hipocondrio derecho postingesta de grasas. Nivel III — requiere analgesia y ecografía urgente pero sin signos de colecistitis complicada.",
+    "sabias_que": "La colelitiasis afecta al 10-15% de la población adulta. Las 4F del riesgo: Female, Fat, Forty, Fertile."
+  },
+{
+  "id": 18,
+  "titulo": "Varón, 19 años",
+  "dificultad": "Difícil",
+  "sintomas": [
+    "Disnea brusca con sibilancias",
+    "Antecedentes de asma",
+    "No responde a broncodilatador",
+    "Dificultad para hablar por la disnea"
+  ],
+  "constantes": {
+    "temperatura": "37.0°",
+    "fc": "128",
+    "ta": "110/70",
+    "sato2": "89%"
+  },
+  "respuesta_correcta": 1,
+  "explicacion": "Crisis asmática grave con SatO2 del 89%, FC elevada, sin respuesta a broncodilatador y dificultad para hablar. Nivel I — riesgo vital inmediato.",
+  "sabias_que": "El asma casi fatal se caracteriza por silencio respiratorio — ausencia de sibilancias cuando el paciente está muy grave porque no entra aire."
+}
+  {
+    "id": 19,
+    "titulo": "Mujer, 82 años",
+    "dificultad": "Difícil",
+    "sintomas": [
+      "Caída con impotencia funcional de cadera derecha",
+      "Dolor intenso a la movilización",
+      "Rotación externa del miembro",
+      "Acortamiento de extremidad derecha"
+    ],
+    "constantes": {
+      "temperatura": "36.7°",
+      "fc": "96",
+      "ta": "140/85",
+      "sato2": "97%"
+    },
+    "respuesta_correcta": 3,
+    "explicacion": "Fractura de cadera probable con rotación externa y acortamiento. Nivel III — urgente para analgesia y radiografía, sin compromiso vital inmediato.",
+    "sabias_que": "La fractura de cadera en mayores de 80 años tiene una mortalidad al año del 20-30%. La cirugía en las primeras 48 horas reduce significativamente la mortalidad."
+  },
+  {
+    "id": 20,
+    "titulo": "Varón, 45 años",
+    "dificultad": "Difícil",
+    "sintomas": [
+      "Dolor abdominal periumbilical intenso de inicio brusco",
+      "Vómitos",
+      "Abdomen en tabla — rigidez generalizada",
+      "Antecedentes de úlcera péptica"
+    ],
+    "constantes": {
+      "temperatura": "37.8°",
+      "fc": "108",
+      "ta": "100/65",
+      "sato2": "97%"
+    },
+    "respuesta_correcta": 1,
+    "explicacion": "Abdomen en tabla con hipotensión y taquicardia en paciente ulceroso sugiere perforación de víscera hueca con peritonitis. Nivel I — shock séptico incipiente.",
+    "sabias_que": "La perforación de úlcera péptica requiere cirugía urgente. Sin tratamiento la mortalidad supera el 50% por sepsis y fallo multiorgánico."
+  }
+]
