@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/*VARIABLES Y BASE */
+/*Variables */
 :root {
     --color-rojo: #E24B4A;
     --color-naranja: #EF9F27;
@@ -18,6 +18,7 @@
     --color-texto-suave: #777777;
 }
 
+/*BODY*/
 body {
     font-family: 'Syne', sans-serif;
     background-color: white;
@@ -205,7 +206,7 @@ main {
     color: var(--color-texto);
 }
 
-/* PANTALLAS — OCULTO*/
+/* PANTALLAS : OCULTO*/
 .oculto {
     display: none;
 }
@@ -417,12 +418,8 @@ main {
     height: 100%;
     width: 60%;
     border-radius: 3px;
-    background: linear-gradient(
-        to left,
-        var(--color-verde) 0%,
-        var(--color-amarillo) 50%,
-        var(--color-rojo) 100%
-    );
+    background: var(--morado);
+    
 }
 
 .tiempo-texto {
@@ -478,9 +475,7 @@ main {
     color: var(--color-texto-suave);
 }
 
-/* ==================
-   PANTALLA 3 — RESULTADO
-   ================== */
+/*PANTALLA 3 — RESULTADO */
 .resultado-nivel {
     background-color: white;
     border: 1px solid #E0E0E0;
@@ -578,6 +573,15 @@ main {
     font-size: 13px;
     color: var(--color-texto-suave);
     line-height: 1.6;
+}
+/* ESTADO INCORRECTO */
+.resultado-incorrecto {
+    font-size: 14px;
+    font-weight: 600;
+    color: #A32D2D;
+    background-color: #FCEBEB;
+    padding: 6px 14px;
+    border-radius: 20px;
 }
 
 /*RESPONSIVE*/
