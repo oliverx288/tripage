@@ -38,8 +38,8 @@
             </div>
             <div class="grid-casos">
 
-                <div class="caso" data-dificultad="Difícil">
-                    <span>caso #1</span>
+                <div class="caso" data-dificultad="Difícil" data-id="1">
+                    <span>caso 1</span>
                     <h2>Varón, 68 años</h2>
                     <ul>
                         <li>Dolor torácico opresivo</li>
@@ -49,8 +49,8 @@
                     <span>Difícil</span>
                 </div>
 
-                <div class="caso" data-dificultad="Avanzado">
-                    <span>caso #2</span>
+                <div class="caso" data-dificultad="Avanzado" data-id="2">
+                    <span>caso 2</span>
                     <h2>Mujer, 34 años</h2>
                     <ul>
                         <li>Fiebre 39.2°C</li>
@@ -60,8 +60,8 @@
                     <span>Avanzado</span>
                 </div>
 
-                <div class="caso" data-dificultad="Difícil">
-                    <span>caso #3</span>
+                <div class="caso" data-dificultad="Difícil" data-id="3">
+                    <span>caso 3</span>
                     <h2>Mujer, 45 años</h2>
                     <ul>
                         <li>Dolor abdominal difuso</li>
@@ -71,8 +71,8 @@
                     <span>Difícil</span>
                 </div>
 
-                <div class="caso" data-dificultad="Intermedio">
-                    <span>caso #4</span>
+                <div class="caso" data-dificultad="Intermedio" data-id="4">
+                    <span>caso 4</span>
                     <h2>Varón, 22 años</h2>
                     <ul>
                         <li>Dolor torácico punzante que aumenta al respirar</li>
@@ -81,8 +81,8 @@
                     <span>Intermedio</span>
                 </div>
 
-                <div class="caso" data-dificultad="Difícil">
-                    <span>caso #5</span>
+                <div class="caso" data-dificultad="Difícil" data-id="5">
+                    <span>caso 5</span>
                     <h2>Varón, 78 años</h2>
                     <ul>
                         <li>Confusión brusca</li>
@@ -92,8 +92,8 @@
                     <span>Difícil</span>
                 </div>
 
-                <div class="caso" data-dificultad="Intermedio">
-                    <span>caso #6</span>
+                <div class="caso" data-dificultad="Intermedio" data-id="6">
+                    <span>caso 6</span>
                     <h2>Mujer, 32 años</h2>
                     <ul>
                         <li>Palpitaciones súbitas</li>
@@ -103,8 +103,8 @@
                     <span>Intermedio</span>
                 </div>
 
-                <div class="caso" data-dificultad="Avanzado">
-                    <span>caso #7</span>
+                <div class="caso" data-dificultad="Avanzado" data-id="7">
+                    <span>caso 7</span>
                     <h2>Niño, 3 años</h2>
                     <ul>
                         <li>Fiebre 40°C</li>
@@ -114,8 +114,8 @@
                     <span>Avanzado</span>
                 </div>
 
-                <div class="caso" data-dificultad="Avanzado">
-                    <span>caso #8</span>
+                <div class="caso" data-dificultad="Avanzado" data-id="8">
+                    <span>caso 8</span>
                     <h2>Varón, 55 años</h2>
                     <ul>
                         <li>Dolor en mandíbula y brazo izquierdo</li>
@@ -125,8 +125,8 @@
                     <span>Avanzado</span>
                 </div>
 
-                <div class="caso" data-dificultad="Difícil">
-                    <span>caso #9</span>
+                <div class="caso" data-dificultad="Difícil" data-id="9">
+                    <span>caso 9</span>
                     <h2>Mujer, 67 años</h2>
                     <ul>
                         <li>Caída al suelo sin causa aparente</li>
@@ -136,8 +136,8 @@
                     <span>Difícil</span>
                 </div>
 
-                <div class="caso" data-dificultad="Avanzado">
-                    <span>caso #10</span>
+                <div class="caso" data-dificultad="Avanzado" data-id="10">
+                    <span>caso 10</span>
                     <h2>Varón, 40 años</h2>
                     <ul>
                         <li>Cefalea "la peor de su vida"</li>
@@ -150,46 +150,39 @@
             </div>
         </div>
 
-        <!-- PANTALLA 2 — ESTADO ERROR -->
-        <div id="pantalla-2" class="error">
+        <!-- PANTALLA 2 -->
+        <div id="pantalla-2" class="oculto">
 
             <div class="caso-header">
                 <div class="caso-header-izquierda">
-                    <span class="caso-numero">Caso #01</span>
+                    <span class="caso-numero"></span>
                 </div>
-                <span class="resultado-incorrecto">Incorrecto</span>
             </div>
 
             <div class="caso-contenido">
                 <div class="caso-clinico">
                     <span class="caso-seccion-titulo">Presentación clínica</span>
-                    <h2>Varón, 68 años</h2>
-                    <ul>
-                        <li>Dolor torácico opresivo de inicio brusco</li>
-                        <li>Sudoración fría profusa</li>
-                        <li>Disnea leve en reposo</li>
-                        <li>Sin pérdida de conciencia</li>
-                        <li>Tiempo de evolución: 45 minutos</li>
-                    </ul>
+                    <h2></h2>
+                    <ul></ul>
                 </div>
 
                 <div class="caso-constantes">
                     <span class="caso-seccion-titulo">Constantes vitales</span>
                     <div class="constantes-grid">
                         <div class="constante">
-                            <span class="constante-valor">38.1°</span>
+                            <span class="constante-valor"></span>
                             <span class="constante-label">Temp.</span>
                         </div>
                         <div class="constante">
-                            <span class="constante-valor">112</span>
+                            <span class="constante-valor"></span>
                             <span class="constante-label">FC bpm</span>
                         </div>
                         <div class="constante">
-                            <span class="constante-valor">148/92</span>
+                            <span class="constante-valor"></span>
                             <span class="constante-label">TA</span>
                         </div>
                         <div class="constante">
-                            <span class="constante-valor">96%</span>
+                            <span class="constante-valor"></span>
                             <span class="constante-label">SatO₂</span>
                         </div>
                     </div>
@@ -224,56 +217,63 @@
                     <div class="barra-tiempo">
                         <div class="barra-progreso"></div>
                     </div>
-                    <span class="tiempo-texto">⏱ 2:41 restantes</span>
-                </div>
-            </div>
-
-            <div class="respuesta-correcta-box">
-                <div class="nivel-badge nivel-1">
-                    <span class="nivel-romano">I</span>
-                </div>
-                <div class="respuesta-correcta-info">
-                    <span class="respuesta-correcta-titulo">La respuesta correcta era Nivel I</span>
-                    <span class="respuesta-correcta-tipo">Riesgo Vital Inmediato</span>
+                    <span class="tiempo-texto">⏱ 3:00 restantes</span>
                 </div>
             </div>
 
         </div>
 
         <!-- PANTALLA 3 — CORRECTO -->
-        <div id="pantalla-3">
+        <div id="pantalla-3" class="oculto">
 
             <div class="caso-header">
                 <div class="caso-header-izquierda">
-                    <span class="caso-numero">Caso #01</span>
+                    <span class="caso-numero"></span>
                 </div>
                 <span class="resultado-correcto">Correcto</span>
             </div>
 
             <div class="resultado-nivel">
                 <div class="nivel-badge nivel-1">
-                    <span class="nivel-romano">I</span>
+                    <span class="nivel-romano"></span>
                 </div>
                 <div class="resultado-nivel-info">
-                    <span class="resultado-nivel-titulo">Nivel I</span>
-                    <span class="resultado-nivel-subtitulo">Riesgo vital inmediato</span>
+                    <span class="resultado-nivel-titulo"></span>
+                    <span class="resultado-nivel-subtitulo"></span>
                 </div>
             </div>
 
             <div class="resultado-explicacion">
                 <div class="resultado-porque">
-                    <span class="resultado-porque-titulo">¿Por qué nivel I?</span>
-                    <p>El dolor torácico opresivo con sudoración fría y disnea en un varón de 68 años es un síndrome coronario agudo hasta que se demuestre lo contrario. La presentación clásica obliga a activar el código infarto de forma inmediata. Cada minuto sin reperfusión equivale a pérdida irreversible de miocardio.</p>
+                    <span class="resultado-porque-titulo">¿Por qué este nivel?</span>
+                    <p class="resultado-porque-texto"></p>
                 </div>
             </div>
 
             <div class="resultado-sabias">
                 <span class="sabias-titulo">¿Sabías que?</span>
-                <p>En España muere una persona por cardiopatía isquémica cada 4 minutos. El tiempo puerta-balón debe ser inferior a 90 minutos, cada minuto cuenta.</p>
+                <p class="sabias-texto"></p>
             </div>
+
+            <button id="btn-siguiente" class="btn-siguiente">
+                Sigue practicando →
+            </button>
 
         </div>
 
+        <!-- popup error -->
+        <div id="modal-error" class="oculto">
+            <div class="modal-caja">
+                <p class="modal-titulo">Incorrecto</p>
+                <div class="modal-botones">
+                    <button id="btn-reintentar">Intentar de nuevo</button>
+                    <button id="btn-menu">Volver al menú</button>
+                </div>
+            </div>
+        </div>
+
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>

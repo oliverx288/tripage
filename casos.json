@@ -119,26 +119,26 @@
     "explicacion": "Taquicardia a 178 lpm con inicio brusco y mareo sugiere taquicardia supraventricular. Nivel II — frecuencia cardíaca muy elevada con hipotensión leve requiere atención urgente.",
     "sabias_que": "La maniobra de Valsalva puede revertir una TSV en el 20-40% de los casos. Si no responde se usa adenosina intravenosa."
   },
-{
-  "id": 7,
-  "titulo": "Niño, 3 años",
-  "dificultad": "Avanzado",
-  "sintomas": [
-    "Fiebre 40°C de inicio brusco",
-    "Manchas rojizas no blanqueables en piel",
-    "Irritabilidad extrema",
-    "Rechazo de la luz"
-  ],
-  "constantes": {
-    "temperatura": "40.0°",
-    "fc": "158",
-    "ta": "82/48",
-    "sato2": "95%"
+  {
+    "id": 7,
+    "titulo": "Niño, 3 años",
+    "dificultad": "Avanzado",
+    "sintomas": [
+      "Fiebre 40°C de inicio brusco",
+      "Manchas rojizas no blanqueables en piel",
+      "Irritabilidad extrema",
+      "Rechazo de la luz"
+    ],
+    "constantes": {
+      "temperatura": "40.0°",
+      "fc": "158",
+      "ta": "82/48",
+      "sato2": "95%"
+    },
+    "respuesta_correcta": 1,
+    "explicacion": "Fiebre con petequias no blanqueables en niño con signos de shock — taquicardia e hipotensión — es meningococcemia en shock séptico. Nivel I inmediato.",
+    "sabias_que": "La prueba del vaso: si las manchas no desaparecen al presionar con un vaso transparente son petequias — señal de emergencia absoluta."
   },
-  "respuesta_correcta": 1,
-  "explicacion": "Fiebre con petequias no blanqueables en niño con signos de shock — taquicardia e hipotensión — es meningococcemia en shock séptico. Nivel I inmediato.",
-  "sabias_que": "La prueba del vaso: si las manchas no desaparecen al presionar con un vaso transparente son petequias — señal de emergencia absoluta."
-}
   {
     "id": 8,
     "titulo": "Varón, 55 años",
@@ -339,26 +339,26 @@
     "explicacion": "Cólico biliar típico con dolor en hipocondrio derecho postingesta de grasas. Nivel III — requiere analgesia y ecografía urgente pero sin signos de colecistitis complicada.",
     "sabias_que": "La colelitiasis afecta al 10-15% de la población adulta. Las 4F del riesgo: Female, Fat, Forty, Fertile."
   },
-{
-  "id": 18,
-  "titulo": "Varón, 19 años",
-  "dificultad": "Difícil",
-  "sintomas": [
-    "Disnea brusca con sibilancias",
-    "Antecedentes de asma",
-    "No responde a broncodilatador",
-    "Dificultad para hablar por la disnea"
-  ],
-  "constantes": {
-    "temperatura": "37.0°",
-    "fc": "128",
-    "ta": "110/70",
-    "sato2": "89%"
+  {
+    "id": 18,
+    "titulo": "Varón, 19 años",
+    "dificultad": "Difícil",
+    "sintomas": [
+      "Disnea brusca con sibilancias",
+      "Antecedentes de asma",
+      "No responde a broncodilatador",
+      "Dificultad para hablar por la disnea"
+    ],
+    "constantes": {
+      "temperatura": "37.0°",
+      "fc": "128",
+      "ta": "110/70",
+      "sato2": "89%"
+    },
+    "respuesta_correcta": 1,
+    "explicacion": "Crisis asmática grave con SatO2 del 89%, FC elevada, sin respuesta a broncodilatador y dificultad para hablar. Nivel I — riesgo vital inmediato.",
+    "sabias_que": "El asma casi fatal se caracteriza por silencio respiratorio — ausencia de sibilancias cuando el paciente está muy grave porque no entra aire."
   },
-  "respuesta_correcta": 1,
-  "explicacion": "Crisis asmática grave con SatO2 del 89%, FC elevada, sin respuesta a broncodilatador y dificultad para hablar. Nivel I — riesgo vital inmediato.",
-  "sabias_que": "El asma casi fatal se caracteriza por silencio respiratorio — ausencia de sibilancias cuando el paciente está muy grave porque no entra aire."
-}
   {
     "id": 19,
     "titulo": "Mujer, 82 años",
