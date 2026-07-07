@@ -142,7 +142,7 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
             })
         })
 
-        //boton reintentar — cierra el modal y reinicia el temporizador
+        //boton reintentar : cierra el modal y reinicia el temporizador
         document.getElementById("btn-reintentar").addEventListener("click", () => {
             document.getElementById("modal-error").classList.add("oculto")
             if (window.iniciarTemporizador) window.iniciarTemporizador()
@@ -156,9 +156,16 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
-        //botón sigue practicando — vuelve a pantalla 1
+        //boton sigue practicando : vuelve a pantalla 1
         document.getElementById("btn-siguiente").addEventListener("click", () => {
             document.getElementById("pantalla-3").classList.add("oculto")
+            document.getElementById("pantalla-1").classList.remove("oculto")
+        })
+
+        //botón menu pantalla 2 : para el temporizador y vuelve a pantalla 1
+        document.getElementById("btn-menu-p2").addEventListener("click", () => {
+            clearInterval(window.temporizador)
+            document.getElementById("pantalla-2").classList.add("oculto")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
