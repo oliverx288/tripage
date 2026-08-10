@@ -118,6 +118,7 @@ main {
     display: flex;
     gap: 8px;
     margin-bottom: 24px;
+    flex-wrap: wrap;
 }
 
 .filtro {
@@ -641,12 +642,26 @@ main {
         grid-template-columns: 1fr;
     }
 
+    .filtros {
+        flex-wrap: wrap;
+    }
+
     .manchester-botones {
         gap: 4px;
     }
 
     .manchester-btn {
-        width: 60px;
-        height: 60px;
+        width: 56px;
+        height: 56px;
+        padding: 4px;
+    }
+
+    .nivel-numero {
+        font-size: 16px;
+    }
+
+    .nivel-nombre {
+        font-size: 9px;
+        font-weight: 700;
     }
 }
