@@ -34,7 +34,7 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
                 selecciona: "Selecciona el nivel de triaje Manchester:",
                 manchester: ["Inmediato", "Muy urgente", "Urgente", "Estándar", "No urgente"],
                 restantes: "restantes",
-                tiempoAcabado: "⏱ Se acabó el tiempo",
+                tiempoAcabado: "Se acabó el tiempo",
                 incorrecto: "Incorrecto",
                 porqueNivel: "¿Por qué este nivel?",
                 sabias: "¿Sabías que?",
@@ -53,7 +53,7 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
                 selecciona: "Select the Manchester triage level:",
                 manchester: ["Immediate", "Very urgent", "Urgent", "Standard", "Non-urgent"],
                 restantes: "remaining",
-                tiempoAcabado: "⏱ Time's up",
+                tiempoAcabado: "Time's up",
                 incorrecto: "Incorrect",
                 porqueNivel: "Why this level?",
                 sabias: "Did you know?",
@@ -185,7 +185,7 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
                     if (window.temporizador) clearInterval(window.temporizador)
 
                     barraProgreso.style.width = "100%"
-                    tiempoTexto.textContent = "⏱ 3:00 " + textos[idioma].restantes
+                    tiempoTexto.textContent = "3:00 " + textos[idioma].restantes
 
                     window.temporizador = setInterval(() => {
                         tiempoRestante--
@@ -195,7 +195,7 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
 
                         const minutos = Math.floor(tiempoRestante / 60)
                         const segundos = tiempoRestante % 60
-                        tiempoTexto.textContent = "⏱ " + minutos + ":" + (segundos < 10 ? "0" : "") + segundos + " " + textos[idioma].restantes
+                        tiempoTexto.textContent = " " + minutos + ":" + (segundos < 10 ? "0" : "") + segundos + " " + textos[idioma].restantes
 
                         if (tiempoRestante <= 0) {
                             clearInterval(window.temporizador)
