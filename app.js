@@ -2,86 +2,205 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
     .then(respuesta => respuesta.json()) //cuando veamos la respuesta la abrimos
     .then(casos => { //y despues la guardamos en la variable casos (ya convertida a js)
 
-        //mapa de niveles Manchester
+        //idioma activo — empieza en español
+        let idioma = "es"
+        let casoActual = null //guardamos el caso seleccionado para poder actualizarlo al cambiar idioma
+
+        //mapa de niveles Manchester — en los dos idiomas
         const niveles = {
-            1: { romano: "I", titulo: "Nivel I", subtitulo: "Riesgo vital inmediato" },
-            2: { romano: "II", titulo: "Nivel II", subtitulo: "Muy urgente" },
-            3: { romano: "III", titulo: "Nivel III", subtitulo: "Urgente" },
-            4: { romano: "IV", titulo: "Nivel IV", subtitulo: "Estándar" },
-            5: { romano: "V", titulo: "Nivel V", subtitulo: "No urgente" }
+            es: {
+                1: { romano: "I", titulo: "Nivel I", subtitulo: "Riesgo vital inmediato" },
+                2: { romano: "II", titulo: "Nivel II", subtitulo: "Muy urgente" },
+                3: { romano: "III", titulo: "Nivel III", subtitulo: "Urgente" },
+                4: { romano: "IV", titulo: "Nivel IV", subtitulo: "Estándar" },
+                5: { romano: "V", titulo: "Nivel V", subtitulo: "No urgente" }
+            },
+            en: {
+                1: { romano: "I", titulo: "Level I", subtitulo: "Immediate life threat" },
+                2: { romano: "II", titulo: "Level II", subtitulo: "Very urgent" },
+                3: { romano: "III", titulo: "Level III", subtitulo: "Urgent" },
+                4: { romano: "IV", titulo: "Level IV", subtitulo: "Standard" },
+                5: { romano: "V", titulo: "Level V", subtitulo: "Non-urgent" }
+            }
         }
 
-        const tarjetas = document.querySelectorAll(".caso") //document es mi html traducido a JS. Coge todos los divs class="caso"
+        //textos de la interfaz en los dos idiomas
+        const textos = {
+            es: {
+                elegir: "Elige un caso para clasificar",
+                filtros: ["Todos", "Básico", "Intermedio", "Difícil", "Avanzado"],
+                presentacion: "Presentación clínica",
+                constantes: "Constantes vitales",
+                selecciona: "Selecciona el nivel de triaje Manchester:",
+                manchester: ["Inmediato", "Muy urgente", "Urgente", "Estándar", "No urgente"],
+                restantes: "restantes",
+                tiempoAcabado: "⏱ Se acabó el tiempo",
+                incorrecto: "Incorrecto",
+                porqueNivel: "¿Por qué este nivel?",
+                sabias: "¿Sabías que?",
+                correcto: "Correcto",
+                caso: "Caso",
+                menu: "Menú",
+                siguePracticando: "Sigue practicando →",
+                reintentar: "Intentar de nuevo",
+                volverMenu: "Volver al menú"
+            },
+            en: {
+                elegir: "Choose a case to classify",
+                filtros: ["All", "Basic", "Intermediate", "Difficult", "Advanced"],
+                presentacion: "Clinical presentation",
+                constantes: "Vital signs",
+                selecciona: "Select the Manchester triage level:",
+                manchester: ["Immediate", "Very urgent", "Urgent", "Standard", "Non-urgent"],
+                restantes: "remaining",
+                tiempoAcabado: "⏱ Time's up",
+                incorrecto: "Incorrect",
+                porqueNivel: "Why this level?",
+                sabias: "Did you know?",
+                correcto: "Correct",
+                caso: "Case",
+                menu: "Menu",
+                siguePracticando: "Keep practising →",
+                reintentar: "Try again",
+                volverMenu: "Back to menu"
+            }
+        }
 
-        //recorre todas las tarjetas, a cada una le dice "si te clican, me dices tu num"
-        tarjetas.forEach(tarjeta => {
-            tarjeta.addEventListener("click", () => { //"escucha si alguien te hace clica"
+        const tarjetas = document.querySelectorAll(".caso")
+        const pantalla2 = document.getElementById("pantalla-2")
+
+        //filtros de dificultad
+        const filtros = document.querySelectorAll(".filtro")
+        filtros.forEach(filtro => {
+            filtro.addEventListener("click", () => {
+
+                filtros.forEach(f => f.classList.remove("activo"))
+                filtro.classList.add("activo")
+
+                const dificultad = filtro.textContent
+
+                tarjetas.forEach(tarjeta => {
+                    if (dificultad === "Todos" || dificultad === "All") {
+                        tarjeta.classList.remove("oculto")
+                    } else if (tarjeta.dataset.dificultad === dificultad) {
+                        tarjeta.classList.remove("oculto")
+                    } else {
+                        tarjeta.classList.add("oculto")
+                    }
+                })
+            })
+        })
+
+        //botón de idioma — cambia entre ES y EN
+        document.querySelector(".idioma-activo").addEventListener("click", () => {
+            idioma = idioma === "es" ? "en" : "es"
+            document.querySelector(".idioma-activo").textContent = idioma.toUpperCase()
+
+            //cambiar textos de la interfaz
+            document.querySelector("#pantalla-1 > p").textContent = textos[idioma].elegir
+            document.querySelector(".manchester > p").textContent = textos[idioma].selecciona
+            document.querySelectorAll(".caso-seccion-titulo")[0].textContent = textos[idioma].presentacion
+            document.querySelectorAll(".caso-seccion-titulo")[1].textContent = textos[idioma].constantes
+            document.querySelector(".resultado-porque-titulo").textContent = textos[idioma].porqueNivel
+            document.querySelector(".sabias-titulo").textContent = textos[idioma].sabias
+            document.querySelector(".resultado-correcto").textContent = textos[idioma].correcto
+            document.getElementById("btn-siguiente").textContent = textos[idioma].siguePracticando
+            document.getElementById("btn-menu-p2").textContent = textos[idioma].menu
+            document.getElementById("btn-reintentar").textContent = textos[idioma].reintentar
+            document.getElementById("btn-menu").textContent = textos[idioma].volverMenu
+
+            //cambiar filtros
+            document.querySelectorAll(".filtro").forEach((filtro, i) => {
+                filtro.textContent = textos[idioma].filtros[i]
+            })
+
+            //cambiar nombres de los botones Manchester
+            document.querySelectorAll(".nivel-nombre").forEach((nombre, i) => {
+                nombre.textContent = textos[idioma].manchester[i]
+            })
+
+            //actualizar tarjetas — título, dificultad y síntomas
+            tarjetas.forEach(tarjeta => {
                 const id = tarjeta.dataset.id
-                const casoSeleccionado = casos.find(caso => caso.id === Number(id))
-                console.log(casoSeleccionado)
+                const caso = casos.find(c => c.id === Number(id))
+                tarjeta.querySelector("h2").textContent = caso.titulo[idioma]
+                tarjeta.querySelector("span:last-child").textContent = caso.dificultad[idioma]
 
-                //Ocultar pantalla 1
+                const lista = tarjeta.querySelector("ul")
+                lista.innerHTML = ""
+                caso.sintomas[idioma].slice(0, 3).forEach(sintoma => {
+                    const li = document.createElement("li")
+                    li.textContent = sintoma
+                    lista.appendChild(li)
+                })
+            })
+
+            //si hay un caso abierto en pantalla 2, actualizarlo también
+            if (casoActual && !pantalla2.classList.contains("oculto")) {
+                pantalla2.querySelector(".caso-numero").textContent = textos[idioma].caso + " " + casoActual.id
+                pantalla2.querySelector(".caso-clinico h2").textContent = casoActual.titulo[idioma]
+                const listaPantalla2 = pantalla2.querySelector(".caso-clinico ul")
+                listaPantalla2.innerHTML = ""
+                casoActual.sintomas[idioma].forEach(sintoma => {
+                    const li = document.createElement("li")
+                    li.textContent = sintoma
+                    listaPantalla2.appendChild(li)
+                })
+            }
+        })
+
+        //recorre todas las tarjetas
+        tarjetas.forEach(tarjeta => {
+            tarjeta.addEventListener("click", () => {
+                const id = tarjeta.dataset.id
+                casoActual = casos.find(caso => caso.id === Number(id))
+                console.log(casoActual)
+
                 document.getElementById("pantalla-1").classList.add("oculto")
+                pantalla2.classList.remove("oculto")
 
-                //mostrar la pantalla 2
-                document.getElementById("pantalla-2").classList.remove("oculto")
+                pantalla2.querySelector(".caso-numero").textContent = textos[idioma].caso + " " + casoActual.id
+                pantalla2.querySelector(".caso-clinico h2").textContent = casoActual.titulo[idioma]
 
-                //buscar siempre dentro de pantalla 2 para no confundir con los elementos de pantalla 1
-                const pantalla2 = document.getElementById("pantalla-2")
-
-                //busca el span en HTML y cambia su número por el caso que hemos clickado
-                pantalla2.querySelector(".caso-numero").textContent = "Caso " + casoSeleccionado.id
-
-                //rellena el título del paciente
-                pantalla2.querySelector(".caso-clinico h2").textContent = casoSeleccionado.titulo
-
-                //vacía la lista de sintomas y la rellena con los del caso seleccionado
                 const lista = pantalla2.querySelector(".caso-clinico ul")
-                lista.innerHTML = "" //vaciamos primero para que no se acumulen
-                casoSeleccionado.sintomas.forEach(sintoma => {
-                    const li = document.createElement("li") //crea un <li> nuevo
-                    li.textContent = sintoma //le pone el texto del síntoma
-                    lista.appendChild(li) //lo añade a la lista
+                lista.innerHTML = ""
+                casoActual.sintomas[idioma].forEach(sintoma => {
+                    const li = document.createElement("li")
+                    li.textContent = sintoma
+                    lista.appendChild(li)
                 })
 
-                //rellena las constantes vitales en orden: temperatura, FC, TA, SatO2
                 const valores = pantalla2.querySelectorAll(".constante-valor")
-                valores[0].textContent = casoSeleccionado.constantes.temperatura
-                valores[1].textContent = casoSeleccionado.constantes.fc
-                valores[2].textContent = casoSeleccionado.constantes.ta
-                valores[3].textContent = casoSeleccionado.constantes.sato2
+                valores[0].textContent = casoActual.constantes.temperatura
+                valores[1].textContent = casoActual.constantes.fc
+                valores[2].textContent = casoActual.constantes.ta
+                valores[3].textContent = casoActual.constantes.sato2
 
-                //función para iniciar o reiniciar el temporizador
                 function iniciarTemporizador() {
                     let tiempoRestante = 180
                     const barraProgreso = pantalla2.querySelector(".barra-progreso")
                     const tiempoTexto = pantalla2.querySelector(".tiempo-texto")
 
-                    //limpia el temporizador anterior si existe
                     if (window.temporizador) clearInterval(window.temporizador)
 
-                    //resetea la barra al 100%
                     barraProgreso.style.width = "100%"
-                    tiempoTexto.textContent = "⏱ 3:00 restantes"
+                    tiempoTexto.textContent = "⏱ 3:00 " + textos[idioma].restantes
 
                     window.temporizador = setInterval(() => {
                         tiempoRestante--
 
-                        //calcula el porcentaje restante y actualiza la barra
                         const porcentaje = (tiempoRestante / 180) * 100
                         barraProgreso.style.width = porcentaje + "%"
 
-                        //actualiza el texto del tiempo
                         const minutos = Math.floor(tiempoRestante / 60)
                         const segundos = tiempoRestante % 60
-                        tiempoTexto.textContent = "⏱ " + minutos + ":" + (segundos < 10 ? "0" : "") + segundos + " restantes"
+                        tiempoTexto.textContent = "⏱ " + minutos + ":" + (segundos < 10 ? "0" : "") + segundos + " " + textos[idioma].restantes
 
-                        //si se acaba el tiempo muestra el modal con mensaje de tiempo agotado
                         if (tiempoRestante <= 0) {
                             clearInterval(window.temporizador)
                             const modal = document.getElementById("modal-error")
                             const caja = modal.querySelector(".modal-caja")
-                            modal.querySelector(".modal-titulo").textContent = "⏱ Se acabó el tiempo"
+                            modal.querySelector(".modal-titulo").textContent = textos[idioma].tiempoAcabado
                             modal.classList.remove("oculto")
                             caja.classList.remove("vibrar")
                             void caja.offsetWidth
@@ -90,82 +209,74 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
                     }, 1000)
                 }
 
-                //iniciamos el temporizador al entrar al caso
                 iniciarTemporizador()
 
-                //escuchar los botones de Manchester y comparar con la respuesta correcta
                 const botones = pantalla2.querySelectorAll(".manchester-btn")
                 botones.forEach((boton, indice) => {
                     boton.addEventListener("click", () => {
-                        const respuestaUsuario = indice + 1 //el indice empieza en 0, los niveles en 1
+                        const respuestaUsuario = indice + 1
 
-                        if (respuestaUsuario === casoSeleccionado.respuesta_correcta) {
-                            //parar temporizador
+                        if (respuestaUsuario === casoActual.respuesta_correcta) {
                             clearInterval(window.temporizador)
 
-                            //rellenar pantalla 3 con los datos del caso
                             const pantalla3 = document.getElementById("pantalla-3")
-                            const nivel = niveles[casoSeleccionado.respuesta_correcta]
+                            const nivel = niveles[idioma][casoActual.respuesta_correcta]
 
-                            pantalla3.querySelector(".caso-numero").textContent = "Caso " + casoSeleccionado.id
+                            pantalla3.querySelector(".caso-numero").textContent = textos[idioma].caso + " " + casoActual.id
                             pantalla3.querySelector(".nivel-romano").textContent = nivel.romano
                             pantalla3.querySelector(".resultado-nivel-titulo").textContent = nivel.titulo
                             pantalla3.querySelector(".resultado-nivel-subtitulo").textContent = nivel.subtitulo
-                            pantalla3.querySelector(".resultado-porque-texto").textContent = casoSeleccionado.explicacion
-                            pantalla3.querySelector(".sabias-texto").textContent = casoSeleccionado.sabias_que
+                            pantalla3.querySelector(".resultado-porque-texto").textContent = casoActual.explicacion[idioma]
+                            pantalla3.querySelector(".sabias-texto").textContent = casoActual.sabias_que[idioma]
 
-                            //cambiar el color del badge según el nivel
                             const badge = pantalla3.querySelector(".nivel-badge")
-                            badge.className = "nivel-badge nivel-" + casoSeleccionado.respuesta_correcta
+                            badge.className = "nivel-badge nivel-" + casoActual.respuesta_correcta
 
-                            //ocultar pantalla 2 y mostrar pantalla 3
-                            document.getElementById("pantalla-2").classList.add("oculto")
+                            pantalla2.classList.add("oculto")
                             document.getElementById("pantalla-3").classList.remove("oculto")
 
                         } else {
-                            //si es incorrecto: parar temporizador y mostrar modal con vibración
                             clearInterval(window.temporizador)
                             const modal = document.getElementById("modal-error")
                             const caja = modal.querySelector(".modal-caja")
-                            modal.querySelector(".modal-titulo").textContent = "Incorrecto"
+                            modal.querySelector(".modal-titulo").textContent = textos[idioma].incorrecto
                             modal.classList.remove("oculto")
                             caja.classList.remove("vibrar")
-                            void caja.offsetWidth //fuerza el reflow para reiniciar la animación
+                            void caja.offsetWidth
                             caja.classList.add("vibrar")
                         }
                     })
                 })
 
-                //guardamos iniciarTemporizador en window para usarla desde el botón reintentar
                 window.iniciarTemporizador = iniciarTemporizador
 
             })
         })
 
-        //boton reintentar : cierra el modal y reinicia el temporizador
+        //boton reintentar
         document.getElementById("btn-reintentar").addEventListener("click", () => {
             document.getElementById("modal-error").classList.add("oculto")
             if (window.iniciarTemporizador) window.iniciarTemporizador()
         })
 
-        //boton menu: para el temporizador, cierra el modal y vuelve a pantalla 1
+        //boton menu
         document.getElementById("btn-menu").addEventListener("click", () => {
             clearInterval(window.temporizador)
             document.getElementById("modal-error").classList.add("oculto")
-            document.getElementById("pantalla-2").classList.add("oculto")
+            pantalla2.classList.add("oculto")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
-        //boton sigue practicando : vuelve a pantalla 1
+        //boton sigue practicando
         document.getElementById("btn-siguiente").addEventListener("click", () => {
             document.getElementById("pantalla-3").classList.add("oculto")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
-        //botón menu pantalla 2 : para el temporizador y vuelve a pantalla 1
+        //botón menu pantalla 2
         document.getElementById("btn-menu-p2").addEventListener("click", () => {
             clearInterval(window.temporizador)
-            document.getElementById("pantalla-2").classList.add("oculto")
+            pantalla2.classList.add("oculto")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
