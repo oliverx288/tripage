@@ -46,11 +46,6 @@ header > div:last-child {
     gap: 24px;
 }
 
-header > div:last-child > span {
-    font-size: 13px;
-    color: var(--color-texto-suave);
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -371,6 +366,9 @@ main {
     justify-content: center;
     gap: 4px;
     font-family: 'Syne', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    padding: 8px;
 }
 
 .nivel-numero {
@@ -379,7 +377,7 @@ main {
 }
 
 .nivel-nombre {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
 }
 
@@ -575,7 +573,7 @@ main {
 }
 
 #btn-reintentar:hover {
-    background-color: #414a54;
+    background-color: #1a3a5c;
 }
 
 #btn-menu {
@@ -585,7 +583,7 @@ main {
 }
 
 #btn-menu:hover {
-    background-color: #414a54;
+    background-color: #1a3a5c;
 }
 
 /* ANIMACIÓN VIBRAR */
@@ -602,8 +600,7 @@ main {
     animation: vibrar 0.4s ease;
 }
 
-
-/* Botón sigue practicando */
+/* BOTÓN SIGUE PRACTICANDO */
 .btn-siguiente {
     margin-top: 24px;
     padding: 12px 24px;
@@ -629,7 +626,6 @@ main {
     );
     color: var(--color-navy);
 }
-
 
 /*RESPONSIVE*/
 @media only screen and (max-width: 768px) {
