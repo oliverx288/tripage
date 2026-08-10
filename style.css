@@ -648,20 +648,25 @@ main {
 
     .manchester-botones {
         gap: 4px;
+        justify-content: space-between;
     }
 
     .manchester-btn {
-        width: 56px;
-        height: 56px;
+        flex: 1;
+        height: auto;
+        aspect-ratio: 1;
         padding: 4px;
+        width: auto;
+        min-width: 0;
     }
 
     .nivel-numero {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .nivel-nombre {
-        font-size: 9px;
+        font-size: 8px;
         font-weight: 700;
+        line-height: 1.2;
     }
 }
