@@ -119,13 +119,13 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
                 nombre.textContent = textos[idioma].manchester[i]
             })
 
-            //actualizar tarjetas — título, dificultad, síntomas y data-dificultad
+            //actualizar tarjetas: título, dificultad, sintomas y data-dificultad
             tarjetas.forEach(tarjeta => {
                 const id = tarjeta.dataset.id
                 const caso = casos.find(c => c.id === Number(id))
                 tarjeta.querySelector("h2").textContent = caso.titulo[idioma]
                 tarjeta.querySelector("span:last-child").textContent = caso.dificultad[idioma]
-                tarjeta.dataset.dificultad = caso.dificultad[idioma] //actualizar data-dificultad para que los filtros funcionen en el idioma activo
+                tarjeta.dataset.dificultad = caso.dificultad[idioma]
 
                 const lista = tarjeta.querySelector("ul")
                 lista.innerHTML = ""
@@ -134,6 +134,12 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
                     li.textContent = sintoma
                     lista.appendChild(li)
                 })
+            })
+
+            //actualizar número de caso en las tarjetas
+            tarjetas.forEach(tarjeta => {
+                const id = tarjeta.dataset.id
+                tarjeta.querySelector("span:first-child").textContent = textos[idioma].caso + " " + id
             })
 
             //si hay un caso abierto en pantalla 2, actualizarlo también
