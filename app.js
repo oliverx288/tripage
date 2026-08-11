@@ -1,12 +1,10 @@
-fetch("casos.json") //va a buscar y abrir la "libreria"
-    .then(respuesta => respuesta.json()) //cuando veamos la respuesta la abrimos
-    .then(casos => { //y despues la guardamos en la variable casos (ya convertida a js)
+fetch("casos.json")
+    .then(respuesta => respuesta.json())
+    .then(casos => {
 
-        //idioma activo — empieza en español
         let idioma = "es"
-        let casoActual = null //guardamos el caso seleccionado para poder actualizarlo al cambiar idioma
+        let casoActual = null
 
-        //mapa de niveles Manchester — en los dos idiomas
         const niveles = {
             es: {
                 1: { romano: "I", titulo: "Nivel I", subtitulo: "Riesgo vital inmediato" },
@@ -24,7 +22,6 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
             }
         }
 
-        //textos de la interfaz en los dos idiomas
         const textos = {
             es: {
                 elegir: "Elige un caso para clasificar",
@@ -66,19 +63,36 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
             }
         }
 
-        const tarjetas = document.querySelectorAll(".caso")
         const pantalla2 = document.getElementById("pantalla-2")
+
+        //generar tarjetas desde el JSON
+        const grid = document.getElementById("grid-casos")
+        casos.forEach(caso => {
+            const div = document.createElement("div")
+            div.className = "caso"
+            div.dataset.dificultad = caso.dificultad[idioma]
+            div.dataset.id = caso.id
+            div.innerHTML = `
+                <span>${textos[idioma].caso} ${caso.id}</span>
+                <h2>${caso.titulo[idioma]}</h2>
+                <ul>
+                    ${caso.sintomas[idioma].slice(0, 3).map(s => `<li>${s}</li>`).join("")}
+                </ul>
+                <span>${caso.dificultad[idioma]}</span>
+            `
+            grid.appendChild(div)
+        })
+
+        //después de generar las tarjetas las cogemos
+        const tarjetas = document.querySelectorAll(".caso")
 
         //filtros de dificultad
         const filtros = document.querySelectorAll(".filtro")
         filtros.forEach(filtro => {
             filtro.addEventListener("click", () => {
-
                 filtros.forEach(f => f.classList.remove("activo"))
                 filtro.classList.add("activo")
-
                 const dificultad = filtro.textContent
-
                 tarjetas.forEach(tarjeta => {
                     if (dificultad === "Todos" || dificultad === "All") {
                         tarjeta.classList.remove("oculto")
@@ -91,12 +105,11 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
             })
         })
 
-        //botón de idioma — cambia entre ES y EN
+        //botón de idioma
         document.querySelector(".idioma-activo").addEventListener("click", () => {
             idioma = idioma === "es" ? "en" : "es"
             document.querySelector(".idioma-activo").textContent = idioma.toUpperCase()
 
-            //cambiar textos de la interfaz
             document.querySelector("#pantalla-1 > p").textContent = textos[idioma].elegir
             document.querySelector(".manchester > p").textContent = textos[idioma].selecciona
             document.querySelectorAll(".caso-seccion-titulo")[0].textContent = textos[idioma].presentacion
@@ -109,23 +122,21 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
             document.getElementById("btn-reintentar").textContent = textos[idioma].reintentar
             document.getElementById("btn-menu").textContent = textos[idioma].volverMenu
 
-            //cambiar filtros
             document.querySelectorAll(".filtro").forEach((filtro, i) => {
                 filtro.textContent = textos[idioma].filtros[i]
             })
 
-            //cambiar nombres de los botones Manchester
             document.querySelectorAll(".nivel-nombre").forEach((nombre, i) => {
                 nombre.textContent = textos[idioma].manchester[i]
             })
 
-            //actualizar tarjetas: título, dificultad, sintomas y data-dificultad
             tarjetas.forEach(tarjeta => {
                 const id = tarjeta.dataset.id
                 const caso = casos.find(c => c.id === Number(id))
                 tarjeta.querySelector("h2").textContent = caso.titulo[idioma]
                 tarjeta.querySelector("span:last-child").textContent = caso.dificultad[idioma]
                 tarjeta.dataset.dificultad = caso.dificultad[idioma]
+                tarjeta.querySelector("span:first-child").textContent = textos[idioma].caso + " " + id
 
                 const lista = tarjeta.querySelector("ul")
                 lista.innerHTML = ""
@@ -136,13 +147,6 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
                 })
             })
 
-            //actualizar número de caso en las tarjetas
-            tarjetas.forEach(tarjeta => {
-                const id = tarjeta.dataset.id
-                tarjeta.querySelector("span:first-child").textContent = textos[idioma].caso + " " + id
-            })
-
-            //si hay un caso abierto en pantalla 2, actualizarlo también
             if (casoActual && !pantalla2.classList.contains("oculto")) {
                 pantalla2.querySelector(".caso-numero").textContent = textos[idioma].caso + " " + casoActual.id
                 pantalla2.querySelector(".caso-clinico h2").textContent = casoActual.titulo[idioma]
@@ -256,7 +260,6 @@ fetch("casos.json") //va a buscar y abrir la "libreria"
                 })
 
                 window.iniciarTemporizador = iniciarTemporizador
-
             })
         })
 
