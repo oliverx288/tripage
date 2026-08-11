@@ -4,6 +4,7 @@ fetch("casos.json")
 
         let idioma = "es"
         let casoActual = null
+        let casosCompletados = 0
 
         const niveles = {
             es: {
@@ -121,6 +122,7 @@ fetch("casos.json")
             document.getElementById("btn-menu-p2").textContent = textos[idioma].menu
             document.getElementById("btn-reintentar").textContent = textos[idioma].reintentar
             document.getElementById("btn-menu").textContent = textos[idioma].volverMenu
+            document.getElementById("contador-progreso").textContent = casosCompletados + " / 20"
 
             document.querySelectorAll(".filtro").forEach((filtro, i) => {
                 filtro.textContent = textos[idioma].filtros[i]
@@ -165,7 +167,6 @@ fetch("casos.json")
             tarjeta.addEventListener("click", () => {
                 const id = tarjeta.dataset.id
                 casoActual = casos.find(caso => caso.id === Number(id))
-                console.log(casoActual)
 
                 document.getElementById("pantalla-1").classList.add("oculto")
                 pantalla2.classList.remove("oculto")
@@ -222,12 +223,23 @@ fetch("casos.json")
 
                 iniciarTemporizador()
 
+                //clonar botones para eliminar listeners anteriores
                 const botones = pantalla2.querySelectorAll(".manchester-btn")
-                botones.forEach((boton, indice) => {
+                botones.forEach(boton => {
+                    const nuevo = boton.cloneNode(true)
+                    boton.parentNode.replaceChild(nuevo, boton)
+                })
+
+                const botonesLimpios = pantalla2.querySelectorAll(".manchester-btn")
+                botonesLimpios.forEach((boton, indice) => {
                     boton.addEventListener("click", () => {
                         const respuestaUsuario = indice + 1
 
                         if (respuestaUsuario === casoActual.respuesta_correcta) {
+                            //sumar al contador
+                            casosCompletados++
+                            document.getElementById("contador-progreso").textContent = casosCompletados + " / 20"
+
                             clearInterval(window.temporizador)
 
                             const pantalla3 = document.getElementById("pantalla-3")
