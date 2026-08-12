@@ -5,6 +5,21 @@ fetch("casos.json")
         let idioma = "es"
         let casoActual = null
         let casosCompletados = 0
+        let estadisticas = {
+            total: 0,
+            correctos: 0,
+            fallos: 0,
+            porNivel: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+            casosRepaso: []
+        }
+
+        //cargar estadísticas guardadas si existen
+        const guardadas = localStorage.getItem("tripage-estadisticas")
+        if (guardadas) {
+            estadisticas = JSON.parse(guardadas)
+            casosCompletados = estadisticas.correctos
+            document.getElementById("contador-progreso").textContent = casosCompletados + " / 20"
+        }
 
         const niveles = {
             es: {
@@ -84,7 +99,6 @@ fetch("casos.json")
             grid.appendChild(div)
         })
 
-        //después de generar las tarjetas las cogemos
         const tarjetas = document.querySelectorAll(".caso")
 
         //filtros de dificultad
@@ -223,7 +237,6 @@ fetch("casos.json")
 
                 iniciarTemporizador()
 
-                //clonar botones para eliminar listeners anteriores
                 const botones = pantalla2.querySelectorAll(".manchester-btn")
                 botones.forEach(boton => {
                     const nuevo = boton.cloneNode(true)
@@ -236,10 +249,12 @@ fetch("casos.json")
                         const respuestaUsuario = indice + 1
 
                         if (respuestaUsuario === casoActual.respuesta_correcta) {
-                            //sumar al contador
                             casosCompletados++
+                            estadisticas.total++
+                            estadisticas.correctos++
+                            estadisticas.porNivel[casoActual.respuesta_correcta]++
                             document.getElementById("contador-progreso").textContent = casosCompletados + " / 20"
-
+                            localStorage.setItem("tripage-estadisticas", JSON.stringify(estadisticas))
                             clearInterval(window.temporizador)
 
                             const pantalla3 = document.getElementById("pantalla-3")
@@ -259,7 +274,14 @@ fetch("casos.json")
                             document.getElementById("pantalla-3").classList.remove("oculto")
 
                         } else {
+                            estadisticas.total++
+                            estadisticas.fallos++
+                            if (!estadisticas.casosRepaso.includes(casoActual.id)) {
+                                estadisticas.casosRepaso.push(casoActual.id)
+                            }
+                            localStorage.setItem("tripage-estadisticas", JSON.stringify(estadisticas))
                             clearInterval(window.temporizador)
+
                             const modal = document.getElementById("modal-error")
                             const caja = modal.querySelector(".modal-caja")
                             modal.querySelector(".modal-titulo").textContent = textos[idioma].incorrecto
@@ -299,6 +321,44 @@ fetch("casos.json")
         document.getElementById("btn-menu-p2").addEventListener("click", () => {
             clearInterval(window.temporizador)
             pantalla2.classList.add("oculto")
+            document.getElementById("pantalla-1").classList.remove("oculto")
+        })
+
+        //menú hamburguesa
+        document.getElementById("menu-hamburguesa").addEventListener("click", () => {
+            document.getElementById("menu-desplegable").classList.toggle("oculto")
+        })
+
+        //modo practica
+        document.getElementById("modo-practica").addEventListener("click", () => {
+            document.getElementById("menu-desplegable").classList.add("oculto")
+        })
+
+        //botón mi progreso
+        document.getElementById("btn-dashboard").addEventListener("click", () => {
+            document.getElementById("menu-desplegable").classList.add("oculto")
+            document.getElementById("pantalla-1").classList.add("oculto")
+
+            document.getElementById("dash-total").textContent = estadisticas.total
+            document.getElementById("dash-correctos").textContent = estadisticas.correctos
+            document.getElementById("dash-fallos").textContent = estadisticas.fallos
+            const precision = estadisticas.total > 0 ? Math.round((estadisticas.correctos / estadisticas.total) * 100) : 0
+            document.getElementById("dash-precision").textContent = precision + "%"
+
+            const maxNivel = Math.max(...Object.values(estadisticas.porNivel), 1)
+            for (let i = 1; i <= 5; i++) {
+                const valor = estadisticas.porNivel[i]
+                const porcentaje = (valor / maxNivel) * 100
+                document.getElementById("barra-nivel-" + i).style.width = porcentaje + "%"
+                document.getElementById("texto-nivel-" + i).textContent = valor
+            }
+
+            document.getElementById("pantalla-dashboard").classList.remove("oculto")
+        })
+
+        //botón cerrar dashboard
+        document.getElementById("btn-cerrar-dashboard").addEventListener("click", () => {
+            document.getElementById("pantalla-dashboard").classList.add("oculto")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
