@@ -4,25 +4,10 @@
     "titulo": { "es": "Varón, 68 años", "en": "Male, 68 years" },
     "dificultad": { "es": "Avanzado", "en": "Advanced" },
     "sintomas": {
-      "es": [
-        "Dolor torácico opresivo de inicio brusco",
-        "Sudoración fría profusa",
-        "Disnea leve en reposo",
-        "Tiempo de evolución: 45 minutos"
-      ],
-      "en": [
-        "Sudden onset oppressive chest pain",
-        "Profuse cold sweating",
-        "Mild dyspnoea at rest",
-        "Time of onset: 45 minutes"
-      ]
+      "es": ["Dolor torácico opresivo de inicio brusco", "Sudoración fría profusa", "Disnea leve en reposo", "Tiempo de evolución: 45 minutos"],
+      "en": ["Sudden onset oppressive chest pain", "Profuse cold sweating", "Mild dyspnoea at rest", "Time of onset: 45 minutes"]
     },
-    "constantes": {
-      "temperatura": "38.1°",
-      "fc": "112",
-      "ta": "148/92",
-      "sato2": "96%"
-    },
+    "constantes": { "temperatura": "38.1°", "fc": "112", "ta": "148/92", "sato2": "96%" },
     "respuesta_correcta": 2,
     "explicacion": {
       "es": "Dolor torácico opresivo con sudoración fría en varón de 68 años es un síndrome coronario agudo hasta que se demuestre lo contrario. Nivel II porque está hemodinámicamente estable, pero requiere atención en menos de 10 minutos.",
@@ -38,25 +23,10 @@
     "titulo": { "es": "Mujer, 34 años", "en": "Female, 34 years" },
     "dificultad": { "es": "Avanzado", "en": "Advanced" },
     "sintomas": {
-      "es": [
-        "Fiebre 39.2°C",
-        "Cefalea intensa de inicio progresivo",
-        "Rigidez de nuca",
-        "Fotofobia"
-      ],
-      "en": [
-        "Fever 39.2°C",
-        "Severe progressive headache",
-        "Neck stiffness",
-        "Photophobia"
-      ]
+      "es": ["Fiebre 39.2°C", "Cefalea intensa de inicio progresivo", "Rigidez de nuca", "Fotofobia"],
+      "en": ["Fever 39.2°C", "Severe progressive headache", "Neck stiffness", "Photophobia"]
     },
-    "constantes": {
-      "temperatura": "39.2°",
-      "fc": "98",
-      "ta": "110/70",
-      "sato2": "98%"
-    },
+    "constantes": { "temperatura": "39.2°", "fc": "98", "ta": "110/70", "sato2": "98%" },
     "respuesta_correcta": 2,
     "explicacion": {
       "es": "La tríada fiebre + cefalea intensa + rigidez de nuca es meningitis bacteriana hasta que se demuestre lo contrario. Nivel II — riesgo vital si no se trata en menos de 10 minutos.",
@@ -72,25 +42,10 @@
     "titulo": { "es": "Mujer, 45 años", "en": "Female, 45 years" },
     "dificultad": { "es": "Difícil", "en": "Difficult" },
     "sintomas": {
-      "es": [
-        "Dolor abdominal difuso que migra a fosa iliaca derecha",
-        "Náuseas sin vómitos",
-        "Fiebre 38.1°C",
-        "Dolor aumenta con el movimiento"
-      ],
-      "en": [
-        "Diffuse abdominal pain migrating to right iliac fossa",
-        "Nausea without vomiting",
-        "Fever 38.1°C",
-        "Pain worsens with movement"
-      ]
+      "es": ["Dolor abdominal difuso que migra a fosa iliaca derecha", "Náuseas sin vómitos", "Fiebre 38.1°C", "Dolor aumenta con el movimiento"],
+      "en": ["Diffuse abdominal pain migrating to right iliac fossa", "Nausea without vomiting", "Fever 38.1°C", "Pain worsens with movement"]
     },
-    "constantes": {
-      "temperatura": "38.1°",
-      "fc": "92",
-      "ta": "120/78",
-      "sato2": "99%"
-    },
+    "constantes": { "temperatura": "38.1°", "fc": "92", "ta": "120/78", "sato2": "99%" },
     "respuesta_correcta": 3,
     "explicacion": {
       "es": "Dolor abdominal con migración a FID, fiebre y dolor al movimiento sugiere apendicitis aguda. Nivel III — urgente, sin riesgo vital inmediato pero requiere evaluación en menos de 60 minutos.",
@@ -106,25 +61,10 @@
     "titulo": { "es": "Varón, 22 años", "en": "Male, 22 years" },
     "dificultad": { "es": "Intermedio", "en": "Intermediate" },
     "sintomas": {
-      "es": [
-        "Dolor torácico punzante que aumenta al respirar",
-        "Inicio tras ejercicio intenso",
-        "Sin disnea en reposo",
-        "Sin sudoración"
-      ],
-      "en": [
-        "Sharp chest pain worsening with breathing",
-        "Onset after intense exercise",
-        "No dyspnoea at rest",
-        "No sweating"
-      ]
+      "es": ["Dolor torácico punzante que aumenta al respirar", "Inicio tras ejercicio intenso", "Sin disnea en reposo", "Sin sudoración"],
+      "en": ["Sharp chest pain worsening with breathing", "Onset after intense exercise", "No dyspnoea at rest", "No sweating"]
     },
-    "constantes": {
-      "temperatura": "36.8°",
-      "fc": "88",
-      "ta": "118/72",
-      "sato2": "97%"
-    },
+    "constantes": { "temperatura": "36.8°", "fc": "88", "ta": "118/72", "sato2": "97%" },
     "respuesta_correcta": 3,
     "explicacion": {
       "es": "Dolor pleurítico en varón joven y delgado tras esfuerzo sugiere neumotórax espontáneo. Nivel III — requiere radiografía urgente pero hemodinámicamente estable.",
@@ -140,25 +80,10 @@
     "titulo": { "es": "Varón, 78 años", "en": "Male, 78 years" },
     "dificultad": { "es": "Difícil", "en": "Difficult" },
     "sintomas": {
-      "es": [
-        "Confusión brusca de inicio súbito",
-        "Sin fiebre",
-        "Incontinencia urinaria",
-        "Debilidad en extremidad derecha"
-      ],
-      "en": [
-        "Sudden onset confusion",
-        "No fever",
-        "Urinary incontinence",
-        "Right limb weakness"
-      ]
+      "es": ["Confusión brusca de inicio súbito", "Sin fiebre", "Incontinencia urinaria", "Debilidad en extremidad derecha"],
+      "en": ["Sudden onset confusion", "No fever", "Urinary incontinence", "Right limb weakness"]
     },
-    "constantes": {
-      "temperatura": "36.9°",
-      "fc": "82",
-      "ta": "168/95",
-      "sato2": "95%"
-    },
+    "constantes": { "temperatura": "36.9°", "fc": "82", "ta": "168/95", "sato2": "95%" },
     "respuesta_correcta": 2,
     "explicacion": {
       "es": "Confusión brusca con déficit motor en anciano hipertenso es un ictus hasta que se demuestre lo contrario. Nivel II — la ventana terapéutica del ictus isquémico es de 4,5 horas.",
@@ -174,25 +99,10 @@
     "titulo": { "es": "Mujer, 32 años", "en": "Female, 32 years" },
     "dificultad": { "es": "Intermedio", "en": "Intermediate" },
     "sintomas": {
-      "es": [
-        "Palpitaciones súbitas de inicio brusco",
-        "Mareo sin pérdida de conciencia",
-        "Ansiedad referida",
-        "Sin dolor torácico"
-      ],
-      "en": [
-        "Sudden onset palpitations",
-        "Dizziness without loss of consciousness",
-        "Reported anxiety",
-        "No chest pain"
-      ]
+      "es": ["Palpitaciones súbitas de inicio brusco", "Mareo sin pérdida de conciencia", "Ansiedad referida", "Sin dolor torácico"],
+      "en": ["Sudden onset palpitations", "Dizziness without loss of consciousness", "Reported anxiety", "No chest pain"]
     },
-    "constantes": {
-      "temperatura": "36.7°",
-      "fc": "178",
-      "ta": "105/65",
-      "sato2": "98%"
-    },
+    "constantes": { "temperatura": "36.7°", "fc": "178", "ta": "105/65", "sato2": "98%" },
     "respuesta_correcta": 2,
     "explicacion": {
       "es": "Taquicardia a 178 lpm con inicio brusco y mareo sugiere taquicardia supraventricular. Nivel II — frecuencia cardíaca muy elevada con hipotensión leve requiere atención urgente.",
@@ -208,25 +118,10 @@
     "titulo": { "es": "Niño, 3 años", "en": "Child, 3 years" },
     "dificultad": { "es": "Avanzado", "en": "Advanced" },
     "sintomas": {
-      "es": [
-        "Fiebre 40°C de inicio brusco",
-        "Manchas rojizas no blanqueables en piel",
-        "Irritabilidad extrema",
-        "Rechazo de la luz"
-      ],
-      "en": [
-        "Sudden fever 40°C",
-        "Non-blanching red skin spots",
-        "Extreme irritability",
-        "Light sensitivity"
-      ]
+      "es": ["Fiebre 40°C de inicio brusco", "Manchas rojizas no blanqueables en piel", "Irritabilidad extrema", "Rechazo de la luz"],
+      "en": ["Sudden fever 40°C", "Non-blanching red skin spots", "Extreme irritability", "Light sensitivity"]
     },
-    "constantes": {
-      "temperatura": "40.0°",
-      "fc": "158",
-      "ta": "82/48",
-      "sato2": "95%"
-    },
+    "constantes": { "temperatura": "40.0°", "fc": "158", "ta": "82/48", "sato2": "95%" },
     "respuesta_correcta": 1,
     "explicacion": {
       "es": "Fiebre con petequias no blanqueables en niño con signos de shock — taquicardia e hipotensión — es meningococcemia en shock séptico. Nivel I inmediato.",
@@ -242,25 +137,10 @@
     "titulo": { "es": "Varón, 55 años", "en": "Male, 55 years" },
     "dificultad": { "es": "Avanzado", "en": "Advanced" },
     "sintomas": {
-      "es": [
-        "Dolor en mandíbula y brazo izquierdo",
-        "Sudoración profusa",
-        "Náuseas",
-        "Sin dolor torácico referido"
-      ],
-      "en": [
-        "Jaw and left arm pain",
-        "Profuse sweating",
-        "Nausea",
-        "No referred chest pain"
-      ]
+      "es": ["Dolor en mandíbula y brazo izquierdo", "Sudoración profusa", "Náuseas", "Sin dolor torácico referido"],
+      "en": ["Jaw and left arm pain", "Profuse sweating", "Nausea", "No referred chest pain"]
     },
-    "constantes": {
-      "temperatura": "37.1°",
-      "fc": "95",
-      "ta": "155/90",
-      "sato2": "95%"
-    },
+    "constantes": { "temperatura": "37.1°", "fc": "95", "ta": "155/90", "sato2": "95%" },
     "respuesta_correcta": 2,
     "explicacion": {
       "es": "IAM atípico sin dolor torácico clásico. El dolor irradiado a mandíbula y brazo izquierdo con sudoración en varón de mediana edad es un equivalente anginoso. Nivel II.",
@@ -276,25 +156,10 @@
     "titulo": { "es": "Mujer, 67 años", "en": "Female, 67 years" },
     "dificultad": { "es": "Difícil", "en": "Difficult" },
     "sintomas": {
-      "es": [
-        "Caída al suelo sin causa aparente",
-        "Recuperación espontánea en 2 minutos",
-        "No recuerda lo ocurrido",
-        "Sin pródromos"
-      ],
-      "en": [
-        "Fall to the ground without apparent cause",
-        "Spontaneous recovery within 2 minutes",
-        "No memory of the event",
-        "No prodromal symptoms"
-      ]
+      "es": ["Caída al suelo sin causa aparente", "Recuperación espontánea en 2 minutos", "No recuerda lo ocurrido", "Sin pródromos"],
+      "en": ["Fall to the ground without apparent cause", "Spontaneous recovery within 2 minutes", "No memory of the event", "No prodromal symptoms"]
     },
-    "constantes": {
-      "temperatura": "36.8°",
-      "fc": "58",
-      "ta": "130/82",
-      "sato2": "97%"
-    },
+    "constantes": { "temperatura": "36.8°", "fc": "58", "ta": "130/82", "sato2": "97%" },
     "respuesta_correcta": 3,
     "explicacion": {
       "es": "Síncope sin causa aparente con bradicardia en anciana requiere evaluación urgente para descartar causa cardíaca. Nivel III — estable pero necesita ECG y monitorización.",
@@ -310,25 +175,10 @@
     "titulo": { "es": "Varón, 40 años", "en": "Male, 40 years" },
     "dificultad": { "es": "Avanzado", "en": "Advanced" },
     "sintomas": {
-      "es": [
-        "Cefalea thunderclap — la peor de su vida",
-        "Inicio brusco en segundos",
-        "Sin fiebre ni rigidez de nuca",
-        "Vómitos en escopetazo"
-      ],
-      "en": [
-        "Thunderclap headache — worst of his life",
-        "Sudden onset within seconds",
-        "No fever or neck stiffness",
-        "Projectile vomiting"
-      ]
+      "es": ["Cefalea thunderclap — la peor de su vida", "Inicio brusco en segundos", "Sin fiebre ni rigidez de nuca", "Vómitos en escopetazo"],
+      "en": ["Thunderclap headache — worst of his life", "Sudden onset within seconds", "No fever or neck stiffness", "Projectile vomiting"]
     },
-    "constantes": {
-      "temperatura": "37.0°",
-      "fc": "78",
-      "ta": "160/95",
-      "sato2": "99%"
-    },
+    "constantes": { "temperatura": "37.0°", "fc": "78", "ta": "160/95", "sato2": "99%" },
     "respuesta_correcta": 2,
     "explicacion": {
       "es": "Cefalea en trueno de inicio súbito es una hemorragia subaracnoidea hasta que se demuestre lo contrario. Nivel II — aunque esté alerta, el riesgo de resangrado es crítico.",
@@ -344,25 +194,10 @@
     "titulo": { "es": "Niña, 8 años", "en": "Girl, 8 years" },
     "dificultad": { "es": "Básico", "en": "Basic" },
     "sintomas": {
-      "es": [
-        "Fiebre 38.5°C",
-        "Dolor de garganta",
-        "Dificultad leve para tragar",
-        "Sin dificultad respiratoria"
-      ],
-      "en": [
-        "Fever 38.5°C",
-        "Sore throat",
-        "Mild difficulty swallowing",
-        "No respiratory distress"
-      ]
+      "es": ["Fiebre 38.5°C", "Dolor de garganta", "Dificultad leve para tragar", "Sin dificultad respiratoria"],
+      "en": ["Fever 38.5°C", "Sore throat", "Mild difficulty swallowing", "No respiratory distress"]
     },
-    "constantes": {
-      "temperatura": "38.5°",
-      "fc": "95",
-      "ta": "100/65",
-      "sato2": "99%"
-    },
+    "constantes": { "temperatura": "38.5°", "fc": "95", "ta": "100/65", "sato2": "99%" },
     "respuesta_correcta": 4,
     "explicacion": {
       "es": "Faringoamigdalitis con fiebre moderada sin signos de gravedad. Nivel IV — estándar, puede esperar hasta 120 minutos. Sin compromiso de vía aérea ni signos de sepsis.",
@@ -378,25 +213,10 @@
     "titulo": { "es": "Varón, 35 años", "en": "Male, 35 years" },
     "dificultad": { "es": "Básico", "en": "Basic" },
     "sintomas": {
-      "es": [
-        "Torcedura de tobillo tras caída",
-        "Dolor moderado al caminar",
-        "Inflamación leve",
-        "Sin deformidad visible"
-      ],
-      "en": [
-        "Ankle sprain after fall",
-        "Moderate pain on walking",
-        "Mild swelling",
-        "No visible deformity"
-      ]
+      "es": ["Torcedura de tobillo tras caída", "Dolor moderado al caminar", "Inflamación leve", "Sin deformidad visible"],
+      "en": ["Ankle sprain after fall", "Moderate pain on walking", "Mild swelling", "No visible deformity"]
     },
-    "constantes": {
-      "temperatura": "36.6°",
-      "fc": "74",
-      "ta": "122/76",
-      "sato2": "99%"
-    },
+    "constantes": { "temperatura": "36.6°", "fc": "74", "ta": "122/76", "sato2": "99%" },
     "respuesta_correcta": 4,
     "explicacion": {
       "es": "Esguince de tobillo sin deformidad ni impotencia funcional total. Nivel IV — estándar. Las reglas de Ottawa ayudan a decidir si se necesita radiografía.",
@@ -412,25 +232,10 @@
     "titulo": { "es": "Mujer, 28 años", "en": "Female, 28 years" },
     "dificultad": { "es": "Básico", "en": "Basic" },
     "sintomas": {
-      "es": [
-        "Dolor al orinar",
-        "Frecuencia urinaria aumentada",
-        "Orina turbia",
-        "Sin fiebre"
-      ],
-      "en": [
-        "Pain on urination",
-        "Increased urinary frequency",
-        "Cloudy urine",
-        "No fever"
-      ]
+      "es": ["Dolor al orinar", "Frecuencia urinaria aumentada", "Orina turbia", "Sin fiebre"],
+      "en": ["Pain on urination", "Increased urinary frequency", "Cloudy urine", "No fever"]
     },
-    "constantes": {
-      "temperatura": "36.9°",
-      "fc": "72",
-      "ta": "115/72",
-      "sato2": "99%"
-    },
+    "constantes": { "temperatura": "36.9°", "fc": "72", "ta": "115/72", "sato2": "99%" },
     "respuesta_correcta": 5,
     "explicacion": {
       "es": "Infección urinaria baja sin fiebre ni signos de afectación sistémica. Nivel V — no urgente. Puede esperar hasta 240 minutos o ser derivada a atención primaria.",
@@ -446,25 +251,10 @@
     "titulo": { "es": "Varón, 50 años", "en": "Male, 50 years" },
     "dificultad": { "es": "Básico", "en": "Basic" },
     "sintomas": {
-      "es": [
-        "Dolor lumbar tras esfuerzo",
-        "Contractura muscular",
-        "Sin irradiación a piernas",
-        "Sin pérdida de fuerza"
-      ],
-      "en": [
-        "Lower back pain after exertion",
-        "Muscle spasm",
-        "No radiation to legs",
-        "No loss of strength"
-      ]
+      "es": ["Dolor lumbar tras esfuerzo", "Contractura muscular", "Sin irradiación a piernas", "Sin pérdida de fuerza"],
+      "en": ["Lower back pain after exertion", "Muscle spasm", "No radiation to legs", "No loss of strength"]
     },
-    "constantes": {
-      "temperatura": "36.7°",
-      "fc": "76",
-      "ta": "128/80",
-      "sato2": "99%"
-    },
+    "constantes": { "temperatura": "36.7°", "fc": "76", "ta": "128/80", "sato2": "99%" },
     "respuesta_correcta": 5,
     "explicacion": {
       "es": "Lumbalgia mecánica aguda sin signos neurológicos ni banderas rojas. Nivel V — no urgente. El 90% de las lumbalgias mecánicas se resuelven en 6 semanas.",
@@ -480,25 +270,10 @@
     "titulo": { "es": "Mujer, 72 años", "en": "Female, 72 years" },
     "dificultad": { "es": "Intermedio", "en": "Intermediate" },
     "sintomas": {
-      "es": [
-        "Disnea progresiva en las últimas 24 horas",
-        "Ortopnea — duerme con 3 almohadas",
-        "Edemas en piernas",
-        "Sin fiebre"
-      ],
-      "en": [
-        "Progressive dyspnoea over last 24 hours",
-        "Orthopnoea — sleeps with 3 pillows",
-        "Leg oedema",
-        "No fever"
-      ]
+      "es": ["Disnea progresiva en las últimas 24 horas", "Ortopnea — duerme con 3 almohadas", "Edemas en piernas", "Sin fiebre"],
+      "en": ["Progressive dyspnoea over last 24 hours", "Orthopnoea — sleeps with 3 pillows", "Leg oedema", "No fever"]
     },
-    "constantes": {
-      "temperatura": "36.8°",
-      "fc": "102",
-      "ta": "158/95",
-      "sato2": "92%"
-    },
+    "constantes": { "temperatura": "36.8°", "fc": "102", "ta": "158/95", "sato2": "92%" },
     "respuesta_correcta": 2,
     "explicacion": {
       "es": "Disnea con ortopnea, edemas y SatO2 del 92% sugiere insuficiencia cardíaca descompensada. Nivel II — SatO2 baja con taquicardia requiere atención urgente en menos de 10 minutos.",
@@ -514,25 +289,10 @@
     "titulo": { "es": "Varón, 62 años", "en": "Male, 62 years" },
     "dificultad": { "es": "Intermedio", "en": "Intermediate" },
     "sintomas": {
-      "es": [
-        "Hemoptisis — tos con sangre",
-        "Pérdida de peso no intencionada",
-        "Fumador de 40 años",
-        "Sin fiebre"
-      ],
-      "en": [
-        "Haemoptysis — coughing up blood",
-        "Unintentional weight loss",
-        "40-year smoker",
-        "No fever"
-      ]
+      "es": ["Hemoptisis — tos con sangre", "Pérdida de peso no intencionada", "Fumador de 40 años", "Sin fiebre"],
+      "en": ["Haemoptysis — coughing up blood", "Unintentional weight loss", "40-year smoker", "No fever"]
     },
-    "constantes": {
-      "temperatura": "37.0°",
-      "fc": "88",
-      "ta": "135/85",
-      "sato2": "94%"
-    },
+    "constantes": { "temperatura": "37.0°", "fc": "88", "ta": "135/85", "sato2": "94%" },
     "respuesta_correcta": 3,
     "explicacion": {
       "es": "Hemoptisis en fumador de larga evolución con pérdida de peso requiere descartar neoplasia pulmonar. Nivel III — urgente pero estable hemodinámicamente.",
@@ -548,25 +308,10 @@
     "titulo": { "es": "Mujer, 25 años", "en": "Female, 25 years" },
     "dificultad": { "es": "Intermedio", "en": "Intermediate" },
     "sintomas": {
-      "es": [
-        "Dolor abdominal en hipocondrio derecho",
-        "Náuseas tras ingesta de comida grasa",
-        "Sin fiebre",
-        "Dolor tipo cólico"
-      ],
-      "en": [
-        "Right upper quadrant abdominal pain",
-        "Nausea after fatty food intake",
-        "No fever",
-        "Colicky pain"
-      ]
+      "es": ["Dolor abdominal en hipocondrio derecho", "Náuseas tras ingesta de comida grasa", "Sin fiebre", "Dolor tipo cólico"],
+      "en": ["Right upper quadrant abdominal pain", "Nausea after fatty food intake", "No fever", "Colicky pain"]
     },
-    "constantes": {
-      "temperatura": "36.9°",
-      "fc": "84",
-      "ta": "118/74",
-      "sato2": "99%"
-    },
+    "constantes": { "temperatura": "36.9°", "fc": "84", "ta": "118/74", "sato2": "99%" },
     "respuesta_correcta": 3,
     "explicacion": {
       "es": "Cólico biliar típico con dolor en hipocondrio derecho postingesta de grasas. Nivel III — requiere analgesia y ecografía urgente pero sin signos de colecistitis complicada.",
@@ -582,25 +327,10 @@
     "titulo": { "es": "Varón, 19 años", "en": "Male, 19 years" },
     "dificultad": { "es": "Difícil", "en": "Difficult" },
     "sintomas": {
-      "es": [
-        "Disnea brusca con sibilancias",
-        "Antecedentes de asma",
-        "No responde a broncodilatador",
-        "Dificultad para hablar por la disnea"
-      ],
-      "en": [
-        "Sudden dyspnoea with wheezing",
-        "History of asthma",
-        "No response to bronchodilator",
-        "Difficulty speaking due to dyspnoea"
-      ]
+      "es": ["Disnea brusca con sibilancias", "Antecedentes de asma", "No responde a broncodilatador", "Dificultad para hablar por la disnea"],
+      "en": ["Sudden dyspnoea with wheezing", "History of asthma", "No response to bronchodilator", "Difficulty speaking due to dyspnoea"]
     },
-    "constantes": {
-      "temperatura": "37.0°",
-      "fc": "128",
-      "ta": "110/70",
-      "sato2": "89%"
-    },
+    "constantes": { "temperatura": "37.0°", "fc": "128", "ta": "110/70", "sato2": "89%" },
     "respuesta_correcta": 1,
     "explicacion": {
       "es": "Crisis asmática grave con SatO2 del 89%, FC elevada, sin respuesta a broncodilatador y dificultad para hablar. Nivel I — riesgo vital inmediato.",
@@ -616,25 +346,10 @@
     "titulo": { "es": "Mujer, 82 años", "en": "Female, 82 years" },
     "dificultad": { "es": "Difícil", "en": "Difficult" },
     "sintomas": {
-      "es": [
-        "Caída con impotencia funcional de cadera derecha",
-        "Dolor intenso a la movilización",
-        "Rotación externa del miembro",
-        "Acortamiento de extremidad derecha"
-      ],
-      "en": [
-        "Fall with functional impairment of right hip",
-        "Severe pain on mobilisation",
-        "External rotation of the limb",
-        "Shortening of right leg"
-      ]
+      "es": ["Caída con impotencia funcional de cadera derecha", "Dolor intenso a la movilización", "Rotación externa del miembro", "Acortamiento de extremidad derecha"],
+      "en": ["Fall with functional impairment of right hip", "Severe pain on mobilisation", "External rotation of the limb", "Shortening of right leg"]
     },
-    "constantes": {
-      "temperatura": "36.7°",
-      "fc": "96",
-      "ta": "140/85",
-      "sato2": "97%"
-    },
+    "constantes": { "temperatura": "36.7°", "fc": "96", "ta": "140/85", "sato2": "97%" },
     "respuesta_correcta": 3,
     "explicacion": {
       "es": "Fractura de cadera probable con rotación externa y acortamiento. Nivel III — urgente para analgesia y radiografía, sin compromiso vital inmediato.",
@@ -650,25 +365,10 @@
     "titulo": { "es": "Varón, 45 años", "en": "Male, 45 years" },
     "dificultad": { "es": "Difícil", "en": "Difficult" },
     "sintomas": {
-      "es": [
-        "Dolor abdominal periumbilical intenso de inicio brusco",
-        "Vómitos",
-        "Abdomen en tabla — rigidez generalizada",
-        "Antecedentes de úlcera péptica"
-      ],
-      "en": [
-        "Sudden onset severe periumbilical pain",
-        "Vomiting",
-        "Board-like abdomen — generalised rigidity",
-        "History of peptic ulcer"
-      ]
+      "es": ["Dolor abdominal periumbilical intenso de inicio brusco", "Vómitos", "Abdomen en tabla — rigidez generalizada", "Antecedentes de úlcera péptica"],
+      "en": ["Sudden onset severe periumbilical pain", "Vomiting", "Board-like abdomen — generalised rigidity", "History of peptic ulcer"]
     },
-    "constantes": {
-      "temperatura": "37.8°",
-      "fc": "108",
-      "ta": "100/65",
-      "sato2": "97%"
-    },
+    "constantes": { "temperatura": "37.8°", "fc": "108", "ta": "100/65", "sato2": "97%" },
     "respuesta_correcta": 1,
     "explicacion": {
       "es": "Abdomen en tabla con hipotensión y taquicardia en paciente ulceroso sugiere perforación de víscera hueca con peritonitis. Nivel I — shock séptico incipiente.",
@@ -677,6 +377,576 @@
     "sabias_que": {
       "es": "La perforación de úlcera péptica requiere cirugía urgente. Sin tratamiento la mortalidad supera el 50% por sepsis y fallo multiorgánico.",
       "en": "Peptic ulcer perforation requires urgent surgery. Without treatment mortality exceeds 50% due to sepsis and multi-organ failure."
+    }
+  },
+  {
+    "id": 21,
+    "titulo": { "es": "Mujer, 29 años", "en": "Female, 29 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Picadura de avispa en antebrazo", "Dolor e inflamación local", "Sin urticaria ni dificultad respiratoria", "Sin antecedentes alérgicos"],
+      "en": ["Wasp sting on forearm", "Local pain and swelling", "No urticaria or breathing difficulty", "No allergic history"]
+    },
+    "constantes": { "temperatura": "36.8°", "fc": "76", "ta": "118/72", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Picadura sin signos de reacción alérgica sistémica. Nivel V — no urgente. Solo requiere limpieza local y analgesia.",
+      "en": "Sting without signs of systemic allergic reaction. Level V — non-urgent. Only requires local cleaning and analgesia."
+    },
+    "sabias_que": {
+      "es": "La anafilaxia por picadura de insecto ocurre en el 1-3% de los casos. Si aparece urticaria generalizada o dificultad respiratoria el nivel sube a I inmediato.",
+      "en": "Insect sting anaphylaxis occurs in 1-3% of cases. If generalised urticaria or breathing difficulty appears, the level rises to I immediate."
+    }
+  },
+  {
+    "id": 22,
+    "titulo": { "es": "Varón, 44 años", "en": "Male, 44 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Conjuntivitis bilateral", "Ojos rojos y con legañas", "Sin pérdida de visión", "Sin dolor ocular intenso"],
+      "en": ["Bilateral conjunctivitis", "Red eyes with discharge", "No vision loss", "No severe eye pain"]
+    },
+    "constantes": { "temperatura": "36.9°", "fc": "74", "ta": "122/78", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Conjuntivitis sin signos de alarma. Nivel V — no urgente. Puede ser atendida en atención primaria.",
+      "en": "Conjunctivitis without alarm signs. Level V — non-urgent. Can be attended in primary care."
+    },
+    "sabias_que": {
+      "es": "El 80% de las conjuntivitis agudas son víricas y se resuelven solas en 7-10 días. Los antibióticos solo están indicados si hay sospecha bacteriana.",
+      "en": "80% of acute conjunctivitis cases are viral and resolve on their own in 7-10 days. Antibiotics are only indicated if bacterial infection is suspected."
+    }
+  },
+  {
+    "id": 23,
+    "titulo": { "es": "Niño, 6 años", "en": "Boy, 6 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Herida superficial en rodilla tras caída", "Sangrado leve controlado con presión", "Sin afectación de estructuras profundas", "Llanto moderado"],
+      "en": ["Superficial knee wound after fall", "Mild bleeding controlled with pressure", "No deep structure involvement", "Moderate crying"]
+    },
+    "constantes": { "temperatura": "36.7°", "fc": "92", "ta": "100/62", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Herida superficial sin afectación profunda ni sangrado activo. Nivel V — no urgente. Solo requiere limpieza y apósito.",
+      "en": "Superficial wound without deep involvement or active bleeding. Level V — non-urgent. Only requires cleaning and dressing."
+    },
+    "sabias_que": {
+      "es": "Las heridas superficiales en niños tienen una tasa de infección muy baja si se limpian bien. La mayoría cicatrizan sin necesidad de puntos.",
+      "en": "Superficial wounds in children have a very low infection rate if cleaned properly. Most heal without the need for stitches."
+    }
+  },
+  {
+    "id": 24,
+    "titulo": { "es": "Mujer, 52 años", "en": "Female, 52 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Dolor de garganta de 3 días de evolución", "Sin fiebre", "Sin dificultad para respirar", "Leve molestia al tragar"],
+      "en": ["Sore throat for 3 days", "No fever", "No breathing difficulty", "Mild discomfort on swallowing"]
+    },
+    "constantes": { "temperatura": "36.8°", "fc": "70", "ta": "120/78", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Faringitis sin fiebre ni signos de gravedad. Nivel V — no urgente. Probable origen vírico, no requiere antibióticos.",
+      "en": "Pharyngitis without fever or signs of severity. Level V — non-urgent. Likely viral origin, antibiotics not required."
+    },
+    "sabias_que": {
+      "es": "Solo el 10-15% de las faringitis en adultos son de origen bacteriano. El test rápido de estreptococo ayuda a evitar el uso innecesario de antibióticos.",
+      "en": "Only 10-15% of adult pharyngitis cases are of bacterial origin. The rapid streptococcus test helps avoid unnecessary antibiotic use."
+    }
+  },
+  {
+    "id": 25,
+    "titulo": { "es": "Varón, 38 años", "en": "Male, 38 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Epistaxis leve — sangrado nasal espontáneo", "Controlado con presión digital en 5 minutos", "Sin anticoagulantes", "Sin traumatismo previo"],
+      "en": ["Mild epistaxis — spontaneous nosebleed", "Controlled with digital pressure in 5 minutes", "No anticoagulants", "No prior trauma"]
+    },
+    "constantes": { "temperatura": "36.6°", "fc": "72", "ta": "128/80", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Epistaxis leve controlada sin factores de riesgo. Nivel V — no urgente. El 90% de las epistaxis anteriores se controlan con presión digital.",
+      "en": "Mild epistaxis controlled without risk factors. Level V — non-urgent. 90% of anterior nosebleeds are controlled with digital pressure."
+    },
+    "sabias_que": {
+      "es": "La zona de Kiesselbach, en el tabique nasal anterior, es responsable del 90% de las epistaxis. Es muy vascularizada y sensible a la sequedad ambiental.",
+      "en": "Kiesselbach's area, on the anterior nasal septum, is responsible for 90% of nosebleeds. It is highly vascularised and sensitive to environmental dryness."
+    }
+  },
+  {
+    "id": 26,
+    "titulo": { "es": "Mujer, 33 años", "en": "Female, 33 years" },
+    "dificultad": { "es": "Intermedio", "en": "Intermediate" },
+    "sintomas": {
+      "es": ["Dolor en fosa renal derecha con irradiación a ingle", "Náuseas sin vómitos", "Orina ligeramente turbia", "Dolor cólico intermitente"],
+      "en": ["Right flank pain radiating to groin", "Nausea without vomiting", "Slightly cloudy urine", "Intermittent colicky pain"]
+    },
+    "constantes": { "temperatura": "37.2°", "fc": "88", "ta": "125/80", "sato2": "98%" },
+    "respuesta_correcta": 3,
+    "explicacion": {
+      "es": "Cólico nefrítico típico con dolor en fosa renal e irradiación inguinal. Nivel III — urgente. Requiere analgesia y ecografía para confirmar litiasis.",
+      "en": "Typical renal colic with flank pain and inguinal radiation. Level III — urgent. Requires analgesia and ultrasound to confirm lithiasis."
+    },
+    "sabias_que": {
+      "es": "El cólico nefrítico es una de las causas de dolor más intenso que existe. Los cálculos de menos de 5mm se expulsan espontáneamente en el 90% de los casos.",
+      "en": "Renal colic is one of the most intense pain causes. Stones under 5mm pass spontaneously in 90% of cases."
+    }
+  },
+  {
+    "id": 27,
+    "titulo": { "es": "Varón, 70 años", "en": "Male, 70 years" },
+    "dificultad": { "es": "Intermedio", "en": "Intermediate" },
+    "sintomas": {
+      "es": ["Dolor en pantorrilla izquierda", "Edema y calor local", "Sin traumatismo previo", "Viaje largo en avión hace 2 días"],
+      "en": ["Left calf pain", "Swelling and local warmth", "No prior trauma", "Long flight 2 days ago"]
+    },
+    "constantes": { "temperatura": "37.1°", "fc": "82", "ta": "135/85", "sato2": "97%" },
+    "respuesta_correcta": 3,
+    "explicacion": {
+      "es": "Dolor en pantorrilla con edema tras viaje largo — sospecha de trombosis venosa profunda. Nivel III — urgente. Requiere ecografía Doppler urgente.",
+      "en": "Calf pain with swelling after long travel — suspected deep vein thrombosis. Level III — urgent. Requires urgent Doppler ultrasound."
+    },
+    "sabias_que": {
+      "es": "La TVP puede complicarse con tromboembolismo pulmonar, potencialmente mortal. El síndrome de la clase turista aumenta el riesgo por inmovilización prolongada.",
+      "en": "DVT can be complicated by pulmonary embolism, potentially fatal. Economy class syndrome increases risk due to prolonged immobilisation."
+    }
+  },
+  {
+    "id": 28,
+    "titulo": { "es": "Mujer, 48 años", "en": "Female, 48 years" },
+    "dificultad": { "es": "Intermedio", "en": "Intermediate" },
+    "sintomas": {
+      "es": ["Migraña intensa de inicio brusco", "Vómitos repetidos", "Fotofobia y fonofobia", "Antecedentes de migraña frecuente"],
+      "en": ["Severe sudden migraine", "Repeated vomiting", "Photophobia and phonophobia", "History of frequent migraine"]
+    },
+    "constantes": { "temperatura": "36.9°", "fc": "78", "ta": "138/88", "sato2": "99%" },
+    "respuesta_correcta": 3,
+    "explicacion": {
+      "es": "Migraña con vómitos en paciente con antecedentes conocidos. Nivel III — urgente. Sin signos neurológicos nuevos ni rigidez de nuca.",
+      "en": "Migraine with vomiting in patient with known history. Level III — urgent. No new neurological signs or neck stiffness."
+    },
+    "sabias_que": {
+      "es": "La migraña afecta al 15% de la población y es tres veces más frecuente en mujeres. Los triptanes son el tratamiento de elección en urgencias.",
+      "en": "Migraine affects 15% of the population and is three times more common in women. Triptans are the treatment of choice in emergency settings."
+    }
+  },
+  {
+    "id": 29,
+    "titulo": { "es": "Varón, 16 años", "en": "Male, 16 years" },
+    "dificultad": { "es": "Difícil", "en": "Difficult" },
+    "sintomas": {
+      "es": ["Crisis convulsiva de 2 minutos de duración", "Cede espontáneamente", "Estado postcrítico — confuso", "Sin antecedentes epilépticos"],
+      "en": ["Seizure lasting 2 minutes", "Spontaneous resolution", "Postictal state — confused", "No epileptic history"]
+    },
+    "constantes": { "temperatura": "37.0°", "fc": "102", "ta": "125/78", "sato2": "97%" },
+    "respuesta_correcta": 2,
+    "explicacion": {
+      "es": "Primera crisis convulsiva sin antecedentes en adolescente. Nivel II — muy urgente. Requiere evaluación neurológica urgente para descartar causa estructural o metabólica.",
+      "en": "First seizure without history in adolescent. Level II — very urgent. Requires urgent neurological evaluation to rule out structural or metabolic cause."
+    },
+    "sabias_que": {
+      "es": "El 10% de la población tendrá al menos una crisis convulsiva a lo largo de su vida. Una primera crisis no siempre significa epilepsia.",
+      "en": "10% of the population will have at least one seizure in their lifetime. A first seizure does not always mean epilepsy."
+    }
+  },
+  {
+    "id": 30,
+    "titulo": { "es": "Mujer, 41 años", "en": "Female, 41 years" },
+    "dificultad": { "es": "Difícil", "en": "Difficult" },
+    "sintomas": {
+      "es": ["Dolor abdominal en epigastrio irradiado a espalda", "Náuseas y vómitos", "Fiebre 38.5°C", "Antecedentes de colelitiasis"],
+      "en": ["Epigastric pain radiating to back", "Nausea and vomiting", "Fever 38.5°C", "History of cholelithiasis"]
+    },
+    "constantes": { "temperatura": "38.5°", "fc": "105", "ta": "105/68", "sato2": "96%" },
+    "respuesta_correcta": 2,
+    "explicacion": {
+      "es": "Dolor epigástrico irradiado a espalda con fiebre y taquicardia en paciente con colelitiasis — sospecha de pancreatitis aguda. Nivel II — muy urgente.",
+      "en": "Epigastric pain radiating to back with fever and tachycardia in patient with cholelithiasis — suspected acute pancreatitis. Level II — very urgent."
+    },
+    "sabias_que": {
+      "es": "La pancreatitis aguda severa tiene una mortalidad del 15-30%. La amilasa y lipasa elevadas en sangre confirman el diagnóstico.",
+      "en": "Severe acute pancreatitis has a mortality of 15-30%. Elevated amylase and lipase in blood confirm the diagnosis."
+    }
+  },
+  {
+    "id": 31,
+    "titulo": { "es": "Varón, 60 años", "en": "Male, 60 years" },
+    "dificultad": { "es": "Avanzado", "en": "Advanced" },
+    "sintomas": {
+      "es": ["Disnea brusca con dolor pleurítico", "Taquicardia e hipotensión leve", "Antecedentes de TVP hace 6 meses", "SatO2 cayendo"],
+      "en": ["Sudden dyspnoea with pleuritic pain", "Tachycardia and mild hypotension", "History of DVT 6 months ago", "Falling SpO2"]
+    },
+    "constantes": { "temperatura": "37.2°", "fc": "118", "ta": "95/60", "sato2": "90%" },
+    "respuesta_correcta": 1,
+    "explicacion": {
+      "es": "Disnea brusca con SatO2 del 90%, hipotensión y antecedentes de TVP — tromboembolismo pulmonar masivo hasta que se demuestre lo contrario. Nivel I — riesgo vital inmediato.",
+      "en": "Sudden dyspnoea with SpO2 90%, hypotension and history of DVT — massive pulmonary embolism until proven otherwise. Level I — immediate life threat."
+    },
+    "sabias_que": {
+      "es": "El TEP masivo tiene una mortalidad del 30-50% sin tratamiento. La trombolisis sistémica puede ser necesaria cuando hay inestabilidad hemodinámica.",
+      "en": "Massive PE has a mortality of 30-50% without treatment. Systemic thrombolysis may be necessary when there is haemodynamic instability."
+    }
+  },
+  {
+    "id": 32,
+    "titulo": { "es": "Mujer, 25 años", "en": "Female, 25 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Náuseas y vómitos desde esta mañana", "Sin fiebre", "Tolera líquidos en pequeñas cantidades", "Sin diarrea"],
+      "en": ["Nausea and vomiting since this morning", "No fever", "Tolerates small amounts of liquid", "No diarrhoea"]
+    },
+    "constantes": { "temperatura": "36.8°", "fc": "80", "ta": "112/70", "sato2": "99%" },
+    "respuesta_correcta": 4,
+    "explicacion": {
+      "es": "Gastroenteritis leve sin signos de deshidratación ni fiebre. Nivel IV — estándar. Puede esperar hasta 120 minutos. Se recomienda hidratación oral.",
+      "en": "Mild gastroenteritis without signs of dehydration or fever. Level IV — standard. Can wait up to 120 minutes. Oral hydration recommended."
+    },
+    "sabias_que": {
+      "es": "La gastroenteritis vírica es la segunda causa más frecuente de consulta en urgencias. La mayoría se resuelven en 24-48 horas con hidratación oral.",
+      "en": "Viral gastroenteritis is the second most common reason for emergency visits. Most resolve in 24-48 hours with oral hydration."
+    }
+  },
+  {
+    "id": 33,
+    "titulo": { "es": "Varón, 55 años", "en": "Male, 55 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Dolor en dedo gordo del pie", "Inflamación y enrojecimiento articular", "Inicio brusco nocturno", "Antecedentes de gota"],
+      "en": ["Big toe pain", "Joint swelling and redness", "Sudden nocturnal onset", "History of gout"]
+    },
+    "constantes": { "temperatura": "37.0°", "fc": "78", "ta": "135/85", "sato2": "99%" },
+    "respuesta_correcta": 4,
+    "explicacion": {
+      "es": "Crisis gotosa típica en paciente con antecedentes conocidos. Nivel IV — estándar. Requiere antiinflamatorios, no es urgencia vital.",
+      "en": "Typical gout attack in patient with known history. Level IV — standard. Requires anti-inflammatories, not a vital emergency."
+    },
+    "sabias_que": {
+      "es": "La gota es la artritis inflamatoria más frecuente en hombres mayores de 40 años. Los cristales de urato monosódico en la articulación son los causantes del dolor intenso.",
+      "en": "Gout is the most common inflammatory arthritis in men over 40. Monosodium urate crystals in the joint cause the intense pain."
+    }
+  },
+  {
+    "id": 34,
+    "titulo": { "es": "Mujer, 30 años", "en": "Female, 30 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Erupción cutánea en tronco y brazos", "Picor intenso", "Sin dificultad respiratoria", "Inicio tras tomar ibuprofeno"],
+      "en": ["Skin rash on trunk and arms", "Intense itching", "No breathing difficulty", "Onset after taking ibuprofen"]
+    },
+    "constantes": { "temperatura": "36.9°", "fc": "82", "ta": "118/74", "sato2": "99%" },
+    "respuesta_correcta": 4,
+    "explicacion": {
+      "es": "Urticaria por fármaco sin signos de anafilaxia. Nivel IV — estándar. Requiere antihistamínicos y vigilancia, sin compromiso vital.",
+      "en": "Drug-induced urticaria without signs of anaphylaxis. Level IV — standard. Requires antihistamines and monitoring, no vital compromise."
+    },
+    "sabias_que": {
+      "es": "El ibuprofeno es uno de los fármacos más frecuentemente implicados en reacciones alérgicas. Si aparece angioedema o broncoespasmo el nivel sube a I inmediato.",
+      "en": "Ibuprofen is one of the drugs most frequently implicated in allergic reactions. If angioedema or bronchospasm appear, the level rises to I immediate."
+    }
+  },
+  {
+    "id": 35,
+    "titulo": { "es": "Varón, 65 años", "en": "Male, 65 years" },
+    "dificultad": { "es": "Intermedio", "en": "Intermediate" },
+    "sintomas": {
+      "es": ["Hematuria macroscópica sin dolor", "Orina completamente roja", "Sin fiebre ni disuria", "Fumador de 30 años"],
+      "en": ["Macroscopic haematuria without pain", "Completely red urine", "No fever or dysuria", "30-year smoker"]
+    },
+    "constantes": { "temperatura": "37.0°", "fc": "80", "ta": "138/88", "sato2": "98%" },
+    "respuesta_correcta": 3,
+    "explicacion": {
+      "es": "Hematuria macroscópica indolora en fumador mayor — bandera roja para neoplasia urotelial. Nivel III — urgente. Requiere evaluación urológica urgente.",
+      "en": "Painless macroscopic haematuria in older smoker — red flag for urothelial malignancy. Level III — urgent. Requires urgent urological evaluation."
+    },
+    "sabias_que": {
+      "es": "El cáncer de vejiga es el tumor urológico más frecuente tras el de próstata. El tabaco multiplica por 4 el riesgo de padecerlo.",
+      "en": "Bladder cancer is the most common urological tumour after prostate cancer. Smoking multiplies the risk by 4."
+    }
+  },
+  {
+    "id": 36,
+    "titulo": { "es": "Mujer, 20 años", "en": "Female, 20 years" },
+    "dificultad": { "es": "Difícil", "en": "Difficult" },
+    "sintomas": {
+      "es": ["Dolor abdominal bajo intenso", "Retraso menstrual de 6 semanas", "Mareo al ponerse de pie", "Test de embarazo positivo"],
+      "en": ["Severe lower abdominal pain", "6 weeks menstrual delay", "Dizziness on standing", "Positive pregnancy test"]
+    },
+    "constantes": { "temperatura": "36.8°", "fc": "108", "ta": "100/62", "sato2": "97%" },
+    "respuesta_correcta": 2,
+    "explicacion": {
+      "es": "Dolor abdominal con test de embarazo positivo, taquicardia e hipotensión ortostática — sospecha de embarazo ectópico roto. Nivel II — muy urgente.",
+      "en": "Abdominal pain with positive pregnancy test, tachycardia and orthostatic hypotension — suspected ruptured ectopic pregnancy. Level II — very urgent."
+    },
+    "sabias_que": {
+      "es": "El embarazo ectópico roto es la principal causa de muerte materna en el primer trimestre. Toda mujer en edad fértil con dolor abdominal debe hacerse un test de embarazo.",
+      "en": "Ruptured ectopic pregnancy is the leading cause of maternal death in the first trimester. Every woman of childbearing age with abdominal pain should take a pregnancy test."
+    }
+  },
+  {
+    "id": 37,
+    "titulo": { "es": "Varón, 58 años", "en": "Male, 58 years" },
+    "dificultad": { "es": "Avanzado", "en": "Advanced" },
+    "sintomas": {
+      "es": ["Dolor de espalda brusco e intensísimo irradiado al abdomen", "Sensación de desgarro", "Hipertensión severa conocida", "Palidez extrema"],
+      "en": ["Sudden severe back pain radiating to abdomen", "Tearing sensation", "Known severe hypertension", "Extreme pallor"]
+    },
+    "constantes": { "temperatura": "37.1°", "fc": "112", "ta": "188/110", "sato2": "95%" },
+    "respuesta_correcta": 1,
+    "explicacion": {
+      "es": "Dolor en desgarro con irradiación abdominal en hipertenso severo — disección aórtica hasta que se demuestre lo contrario. Nivel I — riesgo vital inmediato.",
+      "en": "Tearing pain with abdominal radiation in severe hypertensive — aortic dissection until proven otherwise. Level I — immediate life threat."
+    },
+    "sabias_que": {
+      "es": "La disección aórtica tiene una mortalidad del 1-2% por hora sin tratamiento. La diferencia de tensión arterial entre brazos mayor de 20mmHg es un signo diagnóstico clave.",
+      "en": "Aortic dissection has a mortality of 1-2% per hour without treatment. A blood pressure difference between arms greater than 20mmHg is a key diagnostic sign."
+    }
+  },
+  {
+    "id": 38,
+    "titulo": { "es": "Mujer, 35 años", "en": "Female, 35 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Dolor de muelas intenso", "Inflamación leve de mejilla", "Sin fiebre", "Sin trismus — puede abrir la boca"],
+      "en": ["Severe toothache", "Mild cheek swelling", "No fever", "No trismus — can open mouth"]
+    },
+    "constantes": { "temperatura": "36.8°", "fc": "76", "ta": "118/76", "sato2": "99%" },
+    "respuesta_correcta": 4,
+    "explicacion": {
+      "es": "Odontalgia con inflamación leve sin fiebre ni trismus. Nivel IV — estándar. No hay compromiso de vía aérea ni signos de infección profunda.",
+      "en": "Toothache with mild swelling without fever or trismus. Level IV — standard. No airway compromise or signs of deep infection."
+    },
+    "sabias_que": {
+      "es": "Si el absceso dental se extiende al espacio submandibular puede causar la angina de Ludwig. La fiebre y el trismus son señales de alarma.",
+      "en": "If the dental abscess spreads to the submandibular space it can cause Ludwig's angina. Fever and trismus are alarm signs."
+    }
+  },
+  {
+    "id": 39,
+    "titulo": { "es": "Varón, 73 años", "en": "Male, 73 years" },
+    "dificultad": { "es": "Difícil", "en": "Difficult" },
+    "sintomas": {
+      "es": ["Confusión aguda de inicio en las últimas horas", "Fiebre 38.8°C", "Orina maloliente y turbia", "Antecedentes de infecciones urinarias de repetición"],
+      "en": ["Acute confusion onset over last few hours", "Fever 38.8°C", "Smelly and cloudy urine", "History of recurrent urinary infections"]
+    },
+    "constantes": { "temperatura": "38.8°", "fc": "108", "ta": "102/62", "sato2": "95%" },
+    "respuesta_correcta": 2,
+    "explicacion": {
+      "es": "Confusión aguda con fiebre, hipotensión y taquicardia en anciano con infección urinaria — sospecha de sepsis urinaria. Nivel II — muy urgente.",
+      "en": "Acute confusion with fever, hypotension and tachycardia in elderly with urinary infection — suspected urinary sepsis. Level II — very urgent."
+    },
+    "sabias_que": {
+      "es": "La sepsis es la primera causa de muerte hospitalaria. En ancianos la confusión puede ser el único síntoma inicial — siempre hay que buscar foco infeccioso.",
+      "en": "Sepsis is the leading cause of in-hospital death. In the elderly, confusion may be the only initial symptom — an infectious focus should always be sought."
+    }
+  },
+  {
+    "id": 40,
+    "titulo": { "es": "Niño, 4 años", "en": "Boy, 4 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Fiebre 38.2°C", "Tos seca desde ayer", "Buen estado general", "Come y bebe con normalidad"],
+      "en": ["Fever 38.2°C", "Dry cough since yesterday", "Good general condition", "Eating and drinking normally"]
+    },
+    "constantes": { "temperatura": "38.2°", "fc": "100", "ta": "95/60", "sato2": "98%" },
+    "respuesta_correcta": 4,
+    "explicacion": {
+      "es": "Fiebre moderada con buen estado general en niño. Nivel IV — estándar. Sin signos de gravedad, puede esperar hasta 120 minutos.",
+      "en": "Moderate fever with good general condition in child. Level IV — standard. No signs of severity, can wait up to 120 minutes."
+    },
+    "sabias_que": {
+      "es": "La fiebre en niños es una respuesta normal del sistema inmune. Solo requiere atención urgente si es mayor de 39°C con mal estado general o el niño es menor de 3 meses.",
+      "en": "Fever in children is a normal immune response. It only requires urgent attention if above 39°C with poor general condition or the child is under 3 months old."
+    }
+  },
+  {
+    "id": 41,
+    "titulo": { "es": "Mujer, 66 años", "en": "Female, 66 years" },
+    "dificultad": { "es": "Intermedio", "en": "Intermediate" },
+    "sintomas": {
+      "es": ["Glucemia capilar de 380 mg/dl", "Polidipsia y poliuria desde hace 2 días", "Sin alteración de conciencia", "Diabética tipo 2 con mal control"],
+      "en": ["Capillary blood glucose 380 mg/dl", "Polydipsia and polyuria for 2 days", "No altered consciousness", "Type 2 diabetic with poor control"]
+    },
+    "constantes": { "temperatura": "37.0°", "fc": "92", "ta": "130/82", "sato2": "97%" },
+    "respuesta_correcta": 3,
+    "explicacion": {
+      "es": "Hiperglucemia severa sin alteración de conciencia. Nivel III — urgente. Requiere hidratación e insulinoterapia pero sin compromiso vital inmediato.",
+      "en": "Severe hyperglycaemia without altered consciousness. Level III — urgent. Requires hydration and insulin therapy but no immediate life threat."
+    },
+    "sabias_que": {
+      "es": "La cetoacidosis diabética puede desarrollarse en horas en diabéticos tipo 1. En tipo 2 es más frecuente el síndrome hiperosmolar, igualmente peligroso.",
+      "en": "Diabetic ketoacidosis can develop within hours in type 1 diabetics. In type 2, hyperosmolar syndrome is more common, equally dangerous."
+    }
+  },
+  {
+    "id": 42,
+    "titulo": { "es": "Varón, 28 años", "en": "Male, 28 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Contusión en tobillo derecho tras accidente deportivo", "Dolor moderado al apoyar", "Sin deformidad visible", "Puede caminar con dificultad"],
+      "en": ["Right ankle contusion after sports accident", "Moderate pain on weight-bearing", "No visible deformity", "Can walk with difficulty"]
+    },
+    "constantes": { "temperatura": "36.7°", "fc": "80", "ta": "122/76", "sato2": "99%" },
+    "respuesta_correcta": 4,
+    "explicacion": {
+      "es": "Contusión de tobillo con capacidad de carga. Nivel IV — estándar. Según las reglas de Ottawa, si puede cargar peso la probabilidad de fractura es baja.",
+      "en": "Ankle contusion with weight-bearing ability. Level IV — standard. According to Ottawa rules, if weight-bearing is possible, fracture probability is low."
+    },
+    "sabias_que": {
+      "es": "Las reglas de Ottawa para tobillo tienen una sensibilidad del 99% para detectar fracturas. Evitan miles de radiografías innecesarias al año en urgencias.",
+      "en": "Ottawa ankle rules have 99% sensitivity for detecting fractures. They prevent thousands of unnecessary X-rays per year in emergency departments."
+    }
+  },
+  {
+    "id": 43,
+    "titulo": { "es": "Mujer, 58 años", "en": "Female, 58 years" },
+    "dificultad": { "es": "Avanzado", "en": "Advanced" },
+    "sintomas": {
+      "es": ["Pérdida brusca de visión en ojo derecho indolora", "Como una cortina que cae", "Sin traumatismo", "Miopía severa conocida"],
+      "en": ["Sudden painless vision loss in right eye", "Like a curtain falling", "No trauma", "Known severe myopia"]
+    },
+    "constantes": { "temperatura": "36.8°", "fc": "76", "ta": "128/80", "sato2": "99%" },
+    "respuesta_correcta": 2,
+    "explicacion": {
+      "es": "Pérdida brusca de visión indolora tipo cortina en miope severo — desprendimiento de retina hasta que se demuestre lo contrario. Nivel II — muy urgente. Ventana terapéutica de horas.",
+      "en": "Sudden painless curtain-like vision loss in severe myope — retinal detachment until proven otherwise. Level II — very urgent. Therapeutic window of hours."
+    },
+    "sabias_que": {
+      "es": "La miopía severa es el principal factor de riesgo de desprendimiento de retina. Sin tratamiento en menos de 24 horas puede causar ceguera permanente.",
+      "en": "Severe myopia is the main risk factor for retinal detachment. Without treatment within 24 hours it can cause permanent blindness."
+    }
+  },
+  {
+    "id": 44,
+    "titulo": { "es": "Varón, 42 años", "en": "Male, 42 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Dolor cervical tras leer mucho tiempo con el móvil", "Contractura muscular cervical", "Sin irradiación a brazos", "Sin pérdida de fuerza"],
+      "en": ["Neck pain after prolonged mobile phone use", "Cervical muscle spasm", "No radiation to arms", "No loss of strength"]
+    },
+    "constantes": { "temperatura": "36.6°", "fc": "72", "ta": "120/76", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Cervicalgia mecánica sin signos neurológicos. Nivel V — no urgente. El text neck es cada vez más frecuente por el uso del móvil.",
+      "en": "Mechanical neck pain without neurological signs. Level V — non-urgent. Text neck is increasingly common due to mobile phone use."
+    },
+    "sabias_que": {
+      "es": "Mirar el móvil con el cuello flexionado 60° ejerce una presión equivalente a 27kg sobre la columna cervical. Puede causar cambios degenerativos prematuros.",
+      "en": "Looking at a phone with the neck flexed 60° exerts a pressure equivalent to 27kg on the cervical spine. It can cause premature degenerative changes."
+    }
+  },
+  {
+    "id": 45,
+    "titulo": { "es": "Mujer, 76 años", "en": "Female, 76 years" },
+    "dificultad": { "es": "Difícil", "en": "Difficult" },
+    "sintomas": {
+      "es": ["Disnea progresiva en los últimos 3 días", "Fiebre 38.9°C", "Tos productiva con esputo amarillento", "Crepitantes en base derecha"],
+      "en": ["Progressive dyspnoea over last 3 days", "Fever 38.9°C", "Productive cough with yellow sputum", "Crepitations at right base"]
+    },
+    "constantes": { "temperatura": "38.9°", "fc": "100", "ta": "112/68", "sato2": "92%" },
+    "respuesta_correcta": 2,
+    "explicacion": {
+      "es": "Neumonía con SatO2 del 92%, fiebre y taquicardia en anciana. Nivel II — muy urgente. La neumonía en mayores de 65 años tiene alta mortalidad sin tratamiento precoz.",
+      "en": "Pneumonia with SpO2 92%, fever and tachycardia in elderly woman. Level II — very urgent. Pneumonia in over 65s has high mortality without early treatment."
+    },
+    "sabias_que": {
+      "es": "La neumonía es la infección más frecuente en mayores de 65 años y la primera causa infecciosa de muerte. El índice PSI/PORT ayuda a decidir el ingreso hospitalario.",
+      "en": "Pneumonia is the most common infection in over 65s and the leading infectious cause of death. The PSI/PORT index helps decide hospital admission."
+    }
+  },
+  {
+    "id": 46,
+    "titulo": { "es": "Varón, 31 años", "en": "Male, 31 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Diarrea acuosa desde hace 24 horas", "Sin sangre en heces", "Leve malestar abdominal", "Buen estado de hidratación"],
+      "en": ["Watery diarrhoea for 24 hours", "No blood in stools", "Mild abdominal discomfort", "Good hydration status"]
+    },
+    "constantes": { "temperatura": "37.1°", "fc": "78", "ta": "118/72", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Gastroenteritis leve sin signos de deshidratación ni sangre en heces. Nivel V — no urgente. Hidratación oral y dieta astringente.",
+      "en": "Mild gastroenteritis without signs of dehydration or blood in stools. Level V — non-urgent. Oral hydration and astringent diet."
+    },
+    "sabias_que": {
+      "es": "La diarrea con sangre o moco, fiebre alta o más de 6 deposiciones al día sube el nivel de urgencia. Las sales de rehidratación oral son tan efectivas como el suero intravenoso en adultos.",
+      "en": "Diarrhoea with blood or mucus, high fever, or more than 6 stools per day raises the urgency level. Oral rehydration salts are as effective as intravenous saline in adults."
+    }
+  },
+  {
+    "id": 47,
+    "titulo": { "es": "Mujer, 45 años", "en": "Female, 45 years" },
+    "dificultad": { "es": "Intermedio", "en": "Intermediate" },
+    "sintomas": {
+      "es": ["Dolor en hombro derecho con impotencia funcional parcial", "Caída sobre brazo extendido", "Deformidad visible en hombro", "Sin alteración neurovascular distal"],
+      "en": ["Right shoulder pain with partial functional impairment", "Fall on outstretched arm", "Visible shoulder deformity", "No distal neurovascular alteration"]
+    },
+    "constantes": { "temperatura": "36.7°", "fc": "88", "ta": "125/78", "sato2": "99%" },
+    "respuesta_correcta": 3,
+    "explicacion": {
+      "es": "Luxación de hombro probable con deformidad visible tras caída. Nivel III — urgente. Requiere reducción ortopédica urgente y radiografía.",
+      "en": "Probable shoulder dislocation with visible deformity after fall. Level III — urgent. Requires urgent orthopaedic reduction and X-ray."
+    },
+    "sabias_que": {
+      "es": "La luxación de hombro es la luxación articular más frecuente — representa el 50% de todas las luxaciones. La reducción debe hacerse cuanto antes.",
+      "en": "Shoulder dislocation is the most common joint dislocation — representing 50% of all dislocations. Reduction should be done as soon as possible."
+    }
+  },
+  {
+    "id": 48,
+    "titulo": { "es": "Varón, 22 años", "en": "Male, 22 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Quemadura de primer grado en antebrazo", "Contacto accidental con objeto caliente", "Eritema sin ampollas", "Dolor moderado"],
+      "en": ["First degree burn on forearm", "Accidental contact with hot object", "Erythema without blisters", "Moderate pain"]
+    },
+    "constantes": { "temperatura": "36.8°", "fc": "76", "ta": "120/76", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Quemadura de primer grado superficial sin ampollas. Nivel V — no urgente. Solo requiere enfriamiento con agua fría y analgesia.",
+      "en": "Superficial first degree burn without blisters. Level V — non-urgent. Only requires cooling with cold water and analgesia."
+    },
+    "sabias_que": {
+      "es": "Nunca se debe aplicar pasta de dientes, mantequilla ni hielo sobre quemaduras. El agua fría durante 20 minutos es el único tratamiento inmediato recomendado.",
+      "en": "Toothpaste, butter or ice should never be applied to burns. Cold water for 20 minutes is the only recommended immediate treatment."
+    }
+  },
+  {
+    "id": 49,
+    "titulo": { "es": "Mujer, 55 años", "en": "Female, 55 years" },
+    "dificultad": { "es": "Intermedio", "en": "Intermediate" },
+    "sintomas": {
+      "es": ["Mareo intenso con sensación de giro de objetos", "Náuseas y vómitos", "Inicio brusco al girar la cabeza", "Sin pérdida de audición"],
+      "en": ["Intense dizziness with spinning sensation", "Nausea and vomiting", "Sudden onset when turning head", "No hearing loss"]
+    },
+    "constantes": { "temperatura": "36.9°", "fc": "84", "ta": "125/80", "sato2": "98%" },
+    "respuesta_correcta": 3,
+    "explicacion": {
+      "es": "Vértigo posicional paroxístico benigno probable — inicio con movimiento de cabeza sin déficit auditivo ni neurológico. Nivel III — urgente para descartar causa central.",
+      "en": "Probable benign paroxysmal positional vertigo — onset with head movement without hearing or neurological deficit. Level III — urgent to rule out central cause."
+    },
+    "sabias_que": {
+      "es": "La maniobra de Epley puede resolver el vértigo posicional benigno en el 80% de los casos en una sola sesión. El vértigo de causa central tiene signos neurológicos asociados.",
+      "en": "The Epley manoeuvre can resolve benign positional vertigo in 80% of cases in a single session. Vertigo of central cause has associated neurological signs."
+    }
+  },
+  {
+    "id": 50,
+    "titulo": { "es": "Varón, 48 años", "en": "Male, 48 years" },
+    "dificultad": { "es": "Básico", "en": "Basic" },
+    "sintomas": {
+      "es": ["Dolor en zona lumbar baja tras hacer deporte", "Contractura muscular paravertebral", "Sin irradiación a piernas", "Sin pérdida de control de esfínteres"],
+      "en": ["Lower back pain after sport", "Paravertebral muscle spasm", "No radiation to legs", "No loss of sphincter control"]
+    },
+    "constantes": { "temperatura": "36.7°", "fc": "74", "ta": "126/78", "sato2": "99%" },
+    "respuesta_correcta": 5,
+    "explicacion": {
+      "es": "Lumbalgia mecánica aguda tras esfuerzo deportivo sin signos de alarma. Nivel V — no urgente. Reposo relativo, analgesia y calor local.",
+      "en": "Acute mechanical low back pain after sport without alarm signs. Level V — non-urgent. Relative rest, analgesia and local heat."
+    },
+    "sabias_que": {
+      "es": "La lumbalgia es la primera causa de discapacidad laboral en el mundo. Las banderas rojas — fiebre, pérdida de peso, déficit neurológico — obligan a subir el nivel de urgencia.",
+      "en": "Low back pain is the leading cause of work disability worldwide. Red flags — fever, weight loss, neurological deficit — require raising the urgency level."
     }
   }
 ]

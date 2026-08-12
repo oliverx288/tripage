@@ -18,7 +18,7 @@ fetch("casos.json")
         if (guardadas) {
             estadisticas = JSON.parse(guardadas)
             casosCompletados = estadisticas.correctos
-            document.getElementById("contador-progreso").textContent = casosCompletados + " / 20"
+            document.getElementById("contador-progreso").textContent = casosCompletados + " / 50"
         }
 
         const niveles = {
@@ -136,7 +136,7 @@ fetch("casos.json")
             document.getElementById("btn-menu-p2").textContent = textos[idioma].menu
             document.getElementById("btn-reintentar").textContent = textos[idioma].reintentar
             document.getElementById("btn-menu").textContent = textos[idioma].volverMenu
-            document.getElementById("contador-progreso").textContent = casosCompletados + " / 20"
+            document.getElementById("contador-progreso").textContent = casosCompletados + " / 50"
 
             document.querySelectorAll(".filtro").forEach((filtro, i) => {
                 filtro.textContent = textos[idioma].filtros[i]
@@ -253,7 +253,7 @@ fetch("casos.json")
                             estadisticas.total++
                             estadisticas.correctos++
                             estadisticas.porNivel[casoActual.respuesta_correcta]++
-                            document.getElementById("contador-progreso").textContent = casosCompletados + " / 20"
+                            document.getElementById("contador-progreso").textContent = casosCompletados + " / 50"
                             localStorage.setItem("tripage-estadisticas", JSON.stringify(estadisticas))
                             clearInterval(window.temporizador)
 
