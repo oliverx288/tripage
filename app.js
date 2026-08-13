@@ -344,24 +344,32 @@ fetch("casos.json")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
-        //menú hamburguesa — hover
+        //menú hamburguesa — hover con delay
         const menuHamburguesa = document.getElementById("menu-hamburguesa")
         const menuDesplegable = document.getElementById("menu-desplegable")
+        let menuTimeout
 
         menuHamburguesa.addEventListener("mouseenter", () => {
+            clearTimeout(menuTimeout)
             menuDesplegable.classList.remove("oculto")
         })
 
-        menuHamburguesa.addEventListener("mouseleave", (e) => {
-            if (!menuDesplegable.contains(e.relatedTarget)) {
-                menuDesplegable.classList.add("oculto")
-            }
+        menuHamburguesa.addEventListener("mouseleave", () => {
+            menuTimeout = setTimeout(() => {
+                if (!menuDesplegable.matches(":hover")) {
+                    menuDesplegable.classList.add("oculto")
+                }
+            }, 200)
         })
 
-        menuDesplegable.addEventListener("mouseleave", (e) => {
-            if (!menuHamburguesa.contains(e.relatedTarget)) {
+        menuDesplegable.addEventListener("mouseenter", () => {
+            clearTimeout(menuTimeout)
+        })
+
+        menuDesplegable.addEventListener("mouseleave", () => {
+            menuTimeout = setTimeout(() => {
                 menuDesplegable.classList.add("oculto")
-            }
+            }, 200)
         })
 
         //modo practica
