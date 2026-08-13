@@ -618,8 +618,8 @@
     "constantes": { "temperatura": "37.0°", "fc": "78", "ta": "135/85", "sato2": "99%" },
     "respuesta_correcta": 4,
     "explicacion": {
-      "es": "Crisis gotosa típica en paciente con antecedentes conocidos. Nivel IV — estándar. Requiere antiinflamatorios, no es urgencia vital.",
-      "en": "Typical gout attack in patient with known history. Level IV — standard. Requires anti-inflammatories, not a vital emergency."
+      "es": "Crisis gotosa típica en paciente con antecedentes conocidos. Nivel IV estándar. Requiere antiinflamatorios, no es urgencia vital.",
+      "en": "Typical gout attack in patient with known history. Level IV standard. Requires anti-inflammatories, not a vital emergency."
     },
     "sabias_que": {
       "es": "La gota es la artritis inflamatoria más frecuente en hombres mayores de 40 años. Los cristales de urato monosódico en la articulación son los causantes del dolor intenso.",
@@ -637,8 +637,8 @@
     "constantes": { "temperatura": "36.9°", "fc": "82", "ta": "118/74", "sato2": "99%" },
     "respuesta_correcta": 4,
     "explicacion": {
-      "es": "Urticaria por fármaco sin signos de anafilaxia. Nivel IV — estándar. Requiere antihistamínicos y vigilancia, sin compromiso vital.",
-      "en": "Drug-induced urticaria without signs of anaphylaxis. Level IV — standard. Requires antihistamines and monitoring, no vital compromise."
+      "es": "Urticaria por fármaco sin signos de anafilaxia. Nivel IV estándar. Requiere antihistamínicos y vigilancia, sin compromiso vital.",
+      "en": "Drug-induced urticaria without signs of anaphylaxis. Level IV standard. Requires antihistamines and monitoring, no vital compromise."
     },
     "sabias_que": {
       "es": "El ibuprofeno es uno de los fármacos más frecuentemente implicados en reacciones alérgicas. Si aparece angioedema o broncoespasmo el nivel sube a I inmediato.",
@@ -651,13 +651,13 @@
     "dificultad": { "es": "Intermedio", "en": "Intermediate" },
     "sintomas": {
       "es": ["Hematuria macroscópica sin dolor", "Orina completamente roja", "Sin fiebre ni disuria", "Fumador de 30 años"],
-      "en": ["Macroscopic haematuria without pain", "Completely red urine", "No fever or dysuria", "30-year smoker"]
+      "en": ["Macroscopic haematuria without pain", "Completely red urine", "No fever or dysuria", "30 year smoker"]
     },
     "constantes": { "temperatura": "37.0°", "fc": "80", "ta": "138/88", "sato2": "98%" },
     "respuesta_correcta": 3,
     "explicacion": {
-      "es": "Hematuria macroscópica indolora en fumador mayor — bandera roja para neoplasia urotelial. Nivel III — urgente. Requiere evaluación urológica urgente.",
-      "en": "Painless macroscopic haematuria in older smoker — red flag for urothelial malignancy. Level III — urgent. Requires urgent urological evaluation."
+      "es": "Hematuria macroscópica indolora en fumador mayor — bandera roja para neoplasia urotelial. Nivel III urgente. Requiere evaluación urológica urgente.",
+      "en": "Painless macroscopic haematuria in older smoker — red flag for urothelial malignancy. Level III urgent. Requires urgent urological evaluation."
     },
     "sabias_que": {
       "es": "El cáncer de vejiga es el tumor urológico más frecuente tras el de próstata. El tabaco multiplica por 4 el riesgo de padecerlo.",
@@ -789,8 +789,8 @@
     "constantes": { "temperatura": "36.7°", "fc": "80", "ta": "122/76", "sato2": "99%" },
     "respuesta_correcta": 4,
     "explicacion": {
-      "es": "Contusión de tobillo con capacidad de carga. Nivel IV — estándar. Según las reglas de Ottawa, si puede cargar peso la probabilidad de fractura es baja.",
-      "en": "Ankle contusion with weight-bearing ability. Level IV — standard. According to Ottawa rules, if weight-bearing is possible, fracture probability is low."
+      "es": "Contusión de tobillo con capacidad de carga. Nivel IV estándar. Según las reglas de Ottawa, si puede cargar peso la probabilidad de fractura es baja.",
+      "en": "Ankle contusion with weight-bearing ability. Level IV standard. According to Ottawa rules, if weight-bearing is possible, fracture probability is low."
     },
     "sabias_que": {
       "es": "Las reglas de Ottawa para tobillo tienen una sensibilidad del 99% para detectar fracturas. Evitan miles de radiografías innecesarias al año en urgencias.",
@@ -827,8 +827,8 @@
     "constantes": { "temperatura": "36.6°", "fc": "72", "ta": "120/76", "sato2": "99%" },
     "respuesta_correcta": 5,
     "explicacion": {
-      "es": "Cervicalgia mecánica sin signos neurológicos. Nivel V — no urgente. El text neck es cada vez más frecuente por el uso del móvil.",
-      "en": "Mechanical neck pain without neurological signs. Level V — non-urgent. Text neck is increasingly common due to mobile phone use."
+      "es": "Cervicalgia mecánica sin signos neurológicos. Nivel V no urgente. El text neck es cada vez más frecuente por el uso del móvil.",
+      "en": "Mechanical neck pain without neurological signs. Level V non-urgent. Text neck is increasingly common due to mobile phone use."
     },
     "sabias_que": {
       "es": "Mirar el móvil con el cuello flexionado 60° ejerce una presión equivalente a 27kg sobre la columna cervical. Puede causar cambios degenerativos prematuros.",
@@ -846,8 +846,8 @@
     "constantes": { "temperatura": "38.9°", "fc": "100", "ta": "112/68", "sato2": "92%" },
     "respuesta_correcta": 2,
     "explicacion": {
-      "es": "Neumonía con SatO2 del 92%, fiebre y taquicardia en anciana. Nivel II — muy urgente. La neumonía en mayores de 65 años tiene alta mortalidad sin tratamiento precoz.",
-      "en": "Pneumonia with SpO2 92%, fever and tachycardia in elderly woman. Level II — very urgent. Pneumonia in over 65s has high mortality without early treatment."
+      "es": "Neumonía con SatO2 del 92%, fiebre y taquicardia en anciana. Nivel II muy urgente. La neumonía en mayores de 65 años tiene alta mortalidad sin tratamiento precoz.",
+      "en": "Pneumonia with SpO2 92%, fever and tachycardia in elderly woman. Level II very urgent. Pneumonia in over 65s has high mortality without early treatment."
     },
     "sabias_que": {
       "es": "La neumonía es la infección más frecuente en mayores de 65 años y la primera causa infecciosa de muerte. El índice PSI/PORT ayuda a decidir el ingreso hospitalario.",
@@ -884,12 +884,12 @@
     "constantes": { "temperatura": "36.7°", "fc": "88", "ta": "125/78", "sato2": "99%" },
     "respuesta_correcta": 3,
     "explicacion": {
-      "es": "Luxación de hombro probable con deformidad visible tras caída. Nivel III — urgente. Requiere reducción ortopédica urgente y radiografía.",
-      "en": "Probable shoulder dislocation with visible deformity after fall. Level III — urgent. Requires urgent orthopaedic reduction and X-ray."
+      "es": "Luxación de hombro probable con deformidad visible tras caída. Nivel III urgente. Requiere reducción ortopédica urgente y radiografía.",
+      "en": "Probable shoulder dislocation with visible deformity after fall. Level III urgent. Requires urgent orthopaedic reduction and X-ray."
     },
     "sabias_que": {
-      "es": "La luxación de hombro es la luxación articular más frecuente — representa el 50% de todas las luxaciones. La reducción debe hacerse cuanto antes.",
-      "en": "Shoulder dislocation is the most common joint dislocation — representing 50% of all dislocations. Reduction should be done as soon as possible."
+      "es": "La luxación de hombro es la luxación articular más frecuente, representa el 50% de todas las luxaciones. La reducción debe hacerse cuanto antes.",
+      "en": "Shoulder dislocation is the most common joint dislocation, representing 50% of all dislocations. Reduction should be done as soon as possible."
     }
   },
   {
@@ -903,8 +903,8 @@
     "constantes": { "temperatura": "36.8°", "fc": "76", "ta": "120/76", "sato2": "99%" },
     "respuesta_correcta": 5,
     "explicacion": {
-      "es": "Quemadura de primer grado superficial sin ampollas. Nivel V — no urgente. Solo requiere enfriamiento con agua fría y analgesia.",
-      "en": "Superficial first degree burn without blisters. Level V — non-urgent. Only requires cooling with cold water and analgesia."
+      "es": "Quemadura de primer grado superficial sin ampollas. Nivel V no urgente. Solo requiere enfriamiento con agua fría y analgesia.",
+      "en": "Superficial first degree burn without blisters. Level V non-urgent. Only requires cooling with cold water and analgesia."
     },
     "sabias_que": {
       "es": "Nunca se debe aplicar pasta de dientes, mantequilla ni hielo sobre quemaduras. El agua fría durante 20 minutos es el único tratamiento inmediato recomendado.",
@@ -922,8 +922,8 @@
     "constantes": { "temperatura": "36.9°", "fc": "84", "ta": "125/80", "sato2": "98%" },
     "respuesta_correcta": 3,
     "explicacion": {
-      "es": "Vértigo posicional paroxístico benigno probable — inicio con movimiento de cabeza sin déficit auditivo ni neurológico. Nivel III — urgente para descartar causa central.",
-      "en": "Probable benign paroxysmal positional vertigo — onset with head movement without hearing or neurological deficit. Level III — urgent to rule out central cause."
+      "es": "Vértigo posicional paroxístico benigno probable — inicio con movimiento de cabeza sin déficit auditivo ni neurológico. Nivel III urgente para descartar causa central.",
+      "en": "Probable benign paroxysmal positional vertigo — onset with head movement without hearing or neurological deficit. Level III urgent to rule out central cause."
     },
     "sabias_que": {
       "es": "La maniobra de Epley puede resolver el vértigo posicional benigno en el 80% de los casos en una sola sesión. El vértigo de causa central tiene signos neurológicos asociados.",
@@ -941,12 +941,12 @@
     "constantes": { "temperatura": "36.7°", "fc": "74", "ta": "126/78", "sato2": "99%" },
     "respuesta_correcta": 5,
     "explicacion": {
-      "es": "Lumbalgia mecánica aguda tras esfuerzo deportivo sin signos de alarma. Nivel V — no urgente. Reposo relativo, analgesia y calor local.",
-      "en": "Acute mechanical low back pain after sport without alarm signs. Level V — non-urgent. Relative rest, analgesia and local heat."
+      "es": "Lumbalgia mecánica aguda tras esfuerzo deportivo sin signos de alarma. Nivel V  no urgente. Reposo relativo, analgesia y calor local.",
+      "en": "Acute mechanical low back pain after sport without alarm signs. Level V  non-urgent. Relative rest, analgesia and local heat."
     },
     "sabias_que": {
-      "es": "La lumbalgia es la primera causa de discapacidad laboral en el mundo. Las banderas rojas — fiebre, pérdida de peso, déficit neurológico — obligan a subir el nivel de urgencia.",
-      "en": "Low back pain is the leading cause of work disability worldwide. Red flags — fever, weight loss, neurological deficit — require raising the urgency level."
+      "es": "La lumbalgia es la primera causa de discapacidad laboral en el mundo. Las banderas rojas: fiebre, pérdida de peso, déficit neurológico. Obligan a subir el nivel de urgencia.",
+      "en": "Low back pain is the leading cause of work disability worldwide. Red flags: fever, weight loss, neurological deficit. Require raising the urgency level."
     }
   }
 ]

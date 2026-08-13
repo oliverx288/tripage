@@ -332,12 +332,20 @@ fetch("casos.json")
         //modo practica
         document.getElementById("modo-practica").addEventListener("click", () => {
             document.getElementById("menu-desplegable").classList.add("oculto")
+            document.getElementById("pantalla-2").classList.add("oculto")
+            document.getElementById("pantalla-3").classList.add("oculto")
+            document.getElementById("pantalla-dashboard").classList.add("oculto")
+            document.getElementById("pantalla-1").classList.remove("oculto")
+            clearInterval(window.temporizador)
         })
 
         //botón mi progreso
         document.getElementById("btn-dashboard").addEventListener("click", () => {
             document.getElementById("menu-desplegable").classList.add("oculto")
             document.getElementById("pantalla-1").classList.add("oculto")
+            document.getElementById("pantalla-2").classList.add("oculto")
+            document.getElementById("pantalla-3").classList.add("oculto")
+            clearInterval(window.temporizador)
 
             document.getElementById("dash-total").textContent = estadisticas.total
             document.getElementById("dash-correctos").textContent = estadisticas.correctos
