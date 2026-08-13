@@ -10,13 +10,15 @@ fetch("casos.json")
             correctos: 0,
             fallos: 0,
             porNivel: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
-            casosRepaso: []
+            casosRepaso: [],
+            casosCompletadosIds: []
         }
 
         //cargar estadísticas guardadas si existen
         const guardadas = localStorage.getItem("tripage-estadisticas")
         if (guardadas) {
             estadisticas = JSON.parse(guardadas)
+            if (!estadisticas.casosCompletadosIds) estadisticas.casosCompletadosIds = []
             casosCompletados = estadisticas.correctos
             document.getElementById("contador-progreso").textContent = casosCompletados + " / 50"
         }
@@ -81,6 +83,17 @@ fetch("casos.json")
 
         const pantalla2 = document.getElementById("pantalla-2")
 
+        //función para marcar un caso como completado con tick
+        function marcarCasoCompletado(id) {
+            const tarjeta = document.querySelector(`.caso[data-id="${id}"]`)
+            if (tarjeta && !tarjeta.querySelector(".tick-completado")) {
+                const tick = document.createElement("span")
+                tick.className = "tick-completado"
+                tick.textContent = "✓"
+                tarjeta.appendChild(tick)
+            }
+        }
+
         //generar tarjetas desde el JSON
         const grid = document.getElementById("grid-casos")
         casos.forEach(caso => {
@@ -94,10 +107,13 @@ fetch("casos.json")
                 <ul>
                     ${caso.sintomas[idioma].slice(0, 3).map(s => `<li>${s}</li>`).join("")}
                 </ul>
-                <span>${caso.dificultad[idioma]}</span>
+                <span class="caso-dificultad">${caso.dificultad[idioma]}</span>
             `
             grid.appendChild(div)
         })
+
+        //marcar casos ya completados al cargar
+        estadisticas.casosCompletadosIds.forEach(id => marcarCasoCompletado(id))
 
         const tarjetas = document.querySelectorAll(".caso")
 
@@ -150,7 +166,7 @@ fetch("casos.json")
                 const id = tarjeta.dataset.id
                 const caso = casos.find(c => c.id === Number(id))
                 tarjeta.querySelector("h2").textContent = caso.titulo[idioma]
-                tarjeta.querySelector("span:last-child").textContent = caso.dificultad[idioma]
+                tarjeta.querySelector(".caso-dificultad").textContent = caso.dificultad[idioma]
                 tarjeta.dataset.dificultad = caso.dificultad[idioma]
                 tarjeta.querySelector("span:first-child").textContent = textos[idioma].caso + " " + id
 
@@ -253,8 +269,12 @@ fetch("casos.json")
                             estadisticas.total++
                             estadisticas.correctos++
                             estadisticas.porNivel[casoActual.respuesta_correcta]++
+                            if (!estadisticas.casosCompletadosIds.includes(casoActual.id)) {
+                                estadisticas.casosCompletadosIds.push(casoActual.id)
+                            }
                             document.getElementById("contador-progreso").textContent = casosCompletados + " / 50"
                             localStorage.setItem("tripage-estadisticas", JSON.stringify(estadisticas))
+                            marcarCasoCompletado(casoActual.id)
                             clearInterval(window.temporizador)
 
                             const pantalla3 = document.getElementById("pantalla-3")
@@ -324,9 +344,24 @@ fetch("casos.json")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
-        //menú hamburguesa
-        document.getElementById("menu-hamburguesa").addEventListener("click", () => {
-            document.getElementById("menu-desplegable").classList.toggle("oculto")
+        //menú hamburguesa — hover
+        const menuHamburguesa = document.getElementById("menu-hamburguesa")
+        const menuDesplegable = document.getElementById("menu-desplegable")
+
+        menuHamburguesa.addEventListener("mouseenter", () => {
+            menuDesplegable.classList.remove("oculto")
+        })
+
+        menuHamburguesa.addEventListener("mouseleave", (e) => {
+            if (!menuDesplegable.contains(e.relatedTarget)) {
+                menuDesplegable.classList.add("oculto")
+            }
+        })
+
+        menuDesplegable.addEventListener("mouseleave", (e) => {
+            if (!menuHamburguesa.contains(e.relatedTarget)) {
+                menuDesplegable.classList.add("oculto")
+            }
         })
 
         //modo practica
