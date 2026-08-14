@@ -58,7 +58,19 @@ fetch("casos.json")
                 menu: "Menú",
                 siguePracticando: "Sigue practicando →",
                 reintentar: "Intentar de nuevo",
-                volverMenu: "Volver al menú"
+                volverMenu: "Volver al menú",
+                dashboard: "Mi progreso",
+                casosRealizados: "Casos realizados",
+                dashCorrectos: "Correctos",
+                precision: "Precisión",
+                dashFallos: "Fallos",
+                aciertosNivel: "Aciertos por nivel Manchester",
+                volver: "← Volver",
+                nivelI: "I — Inmediato",
+                nivelII: "II — Muy urgente",
+                nivelIII: "III — Urgente",
+                nivelIV: "IV — Estándar",
+                nivelV: "V — No urgente"
             },
             en: {
                 elegir: "Choose a case to classify",
@@ -77,7 +89,19 @@ fetch("casos.json")
                 menu: "Menu",
                 siguePracticando: "Keep practising →",
                 reintentar: "Try again",
-                volverMenu: "Back to menu"
+                volverMenu: "Back to menu",
+                dashboard: "My progress",
+                casosRealizados: "Cases completed",
+                dashCorrectos: "Correct",
+                precision: "Accuracy",
+                dashFallos: "Incorrect",
+                aciertosNivel: "Correct answers by Manchester level",
+                volver: "← Back",
+                nivelI: "I — Immediate",
+                nivelII: "II — Very urgent",
+                nivelIII: "III — Urgent",
+                nivelIV: "IV — Standard",
+                nivelV: "V — Non-urgent"
             }
         }
 
@@ -92,6 +116,22 @@ fetch("casos.json")
                 tick.textContent = "✓"
                 tarjeta.appendChild(tick)
             }
+        }
+
+        //función para actualizar textos del dashboard
+        function actualizarTextosDashboard() {
+            document.querySelector("#pantalla-dashboard .caso-numero").textContent = textos[idioma].dashboard
+            document.getElementById("btn-cerrar-dashboard").textContent = textos[idioma].volver
+            document.querySelectorAll(".dashboard-label")[0].textContent = textos[idioma].casosRealizados
+            document.querySelectorAll(".dashboard-label")[1].textContent = textos[idioma].dashCorrectos
+            document.querySelectorAll(".dashboard-label")[2].textContent = textos[idioma].precision
+            document.querySelectorAll(".dashboard-label")[3].textContent = textos[idioma].dashFallos
+            document.querySelector(".dashboard-titulo-seccion").textContent = textos[idioma].aciertosNivel
+            document.querySelectorAll(".dashboard-nivel-label")[0].textContent = textos[idioma].nivelI
+            document.querySelectorAll(".dashboard-nivel-label")[1].textContent = textos[idioma].nivelII
+            document.querySelectorAll(".dashboard-nivel-label")[2].textContent = textos[idioma].nivelIII
+            document.querySelectorAll(".dashboard-nivel-label")[3].textContent = textos[idioma].nivelIV
+            document.querySelectorAll(".dashboard-nivel-label")[4].textContent = textos[idioma].nivelV
         }
 
         //generar tarjetas desde el JSON
@@ -161,6 +201,8 @@ fetch("casos.json")
             document.querySelectorAll(".nivel-nombre").forEach((nombre, i) => {
                 nombre.textContent = textos[idioma].manchester[i]
             })
+
+            actualizarTextosDashboard()
 
             tarjetas.forEach(tarjeta => {
                 const id = tarjeta.dataset.id
@@ -390,6 +432,7 @@ fetch("casos.json")
                 document.getElementById("texto-nivel-" + i).textContent = valor
             }
 
+            actualizarTextosDashboard()
             document.getElementById("pantalla-dashboard").classList.remove("oculto")
         })
 
