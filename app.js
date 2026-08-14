@@ -66,11 +66,11 @@ fetch("casos.json")
                 dashFallos: "Fallos",
                 aciertosNivel: "Aciertos por nivel Manchester",
                 volver: "← Volver",
-                nivelI: "I — Inmediato",
-                nivelII: "II — Muy urgente",
-                nivelIII: "III — Urgente",
-                nivelIV: "IV — Estándar",
-                nivelV: "V — No urgente"
+                nivelI: "Nivel I",
+                nivelII: "Nivel II",
+                nivelIII: "Nivel III",
+                nivelIV: "Nivel IV",
+                nivelV: "Nivel V"
             },
             en: {
                 elegir: "Choose a case to classify",
@@ -97,11 +97,11 @@ fetch("casos.json")
                 dashFallos: "Incorrect",
                 aciertosNivel: "Correct answers by Manchester level",
                 volver: "← Back",
-                nivelI: "I — Immediate",
-                nivelII: "II — Very urgent",
-                nivelIII: "III — Urgent",
-                nivelIV: "IV — Standard",
-                nivelV: "V — Non-urgent"
+                nivelI: "Level I",
+                nivelII: "Level II",
+                nivelIII: "Level III",
+                nivelIV: "Level IV",
+                nivelV: "Level V"
             }
         }
 
