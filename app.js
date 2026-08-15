@@ -9,6 +9,8 @@ fetch("casos.json")
             total: 0,
             correctos: 0,
             fallos: 0,
+            subTriaje: 0,
+            sobreTriaje: 0,
             porNivel: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
             casosRepaso: [],
             casosCompletadosIds: []
@@ -19,6 +21,8 @@ fetch("casos.json")
         if (guardadas) {
             estadisticas = JSON.parse(guardadas)
             if (!estadisticas.casosCompletadosIds) estadisticas.casosCompletadosIds = []
+            if (!estadisticas.subTriaje) estadisticas.subTriaje = 0
+            if (!estadisticas.sobreTriaje) estadisticas.sobreTriaje = 0
             casosCompletados = estadisticas.correctos
             document.getElementById("contador-progreso").textContent = casosCompletados + " / 50"
         }
@@ -64,6 +68,8 @@ fetch("casos.json")
                 dashCorrectos: "Correctos",
                 precision: "Precisión",
                 dashFallos: "Fallos",
+                dashSubTriaje: "Sub-triaje",
+                dashSobreTriaje: "Sobre-triaje",
                 aciertosNivel: "Aciertos por nivel Manchester",
                 volver: "← Volver",
                 nivelI: "Nivel I",
@@ -95,6 +101,8 @@ fetch("casos.json")
                 dashCorrectos: "Correct",
                 precision: "Accuracy",
                 dashFallos: "Incorrect",
+                dashSubTriaje: "Under-triage",
+                dashSobreTriaje: "Over-triage",
                 aciertosNivel: "Correct answers by Manchester level",
                 volver: "← Back",
                 nivelI: "Level I",
@@ -107,7 +115,6 @@ fetch("casos.json")
 
         const pantalla2 = document.getElementById("pantalla-2")
 
-        //función para marcar un caso como completado con tick
         function marcarCasoCompletado(id) {
             const tarjeta = document.querySelector(`.caso[data-id="${id}"]`)
             if (tarjeta && !tarjeta.querySelector(".tick-completado")) {
@@ -118,7 +125,6 @@ fetch("casos.json")
             }
         }
 
-        //función para actualizar textos del dashboard
         function actualizarTextosDashboard() {
             document.querySelector("#pantalla-dashboard .caso-numero").textContent = textos[idioma].dashboard
             document.getElementById("btn-cerrar-dashboard").textContent = textos[idioma].volver
@@ -126,6 +132,8 @@ fetch("casos.json")
             document.querySelectorAll(".dashboard-label")[1].textContent = textos[idioma].dashCorrectos
             document.querySelectorAll(".dashboard-label")[2].textContent = textos[idioma].precision
             document.querySelectorAll(".dashboard-label")[3].textContent = textos[idioma].dashFallos
+            document.querySelectorAll(".dashboard-label")[4].textContent = textos[idioma].dashSubTriaje
+            document.querySelectorAll(".dashboard-label")[5].textContent = textos[idioma].dashSobreTriaje
             document.querySelector(".dashboard-titulo-seccion").textContent = textos[idioma].aciertosNivel
             document.querySelectorAll(".dashboard-nivel-label")[0].textContent = textos[idioma].nivelI
             document.querySelectorAll(".dashboard-nivel-label")[1].textContent = textos[idioma].nivelII
@@ -134,7 +142,6 @@ fetch("casos.json")
             document.querySelectorAll(".dashboard-nivel-label")[4].textContent = textos[idioma].nivelV
         }
 
-        //generar tarjetas desde el JSON
         const grid = document.getElementById("grid-casos")
         casos.forEach(caso => {
             const div = document.createElement("div")
@@ -152,12 +159,10 @@ fetch("casos.json")
             grid.appendChild(div)
         })
 
-        //marcar casos ya completados al cargar
         estadisticas.casosCompletadosIds.forEach(id => marcarCasoCompletado(id))
 
         const tarjetas = document.querySelectorAll(".caso")
 
-        //filtros de dificultad
         const filtros = document.querySelectorAll(".filtro")
         filtros.forEach(filtro => {
             filtro.addEventListener("click", () => {
@@ -176,11 +181,9 @@ fetch("casos.json")
             })
         })
 
-        //botón de idioma
         document.querySelector(".idioma-activo").addEventListener("click", () => {
             idioma = idioma === "es" ? "en" : "es"
             document.querySelector(".idioma-activo").textContent = idioma.toUpperCase()
-
             document.querySelector("#pantalla-1 > p").textContent = textos[idioma].elegir
             document.querySelector(".manchester > p").textContent = textos[idioma].selecciona
             document.querySelectorAll(".caso-seccion-titulo")[0].textContent = textos[idioma].presentacion
@@ -234,7 +237,6 @@ fetch("casos.json")
             }
         })
 
-        //recorre todas las tarjetas
         tarjetas.forEach(tarjeta => {
             tarjeta.addEventListener("click", () => {
                 const id = tarjeta.dataset.id
@@ -338,6 +340,16 @@ fetch("casos.json")
                         } else {
                             estadisticas.total++
                             estadisticas.fallos++
+
+                            // sub-triaje: eligió nivel MÁS ALTO (menos urgente)
+                            if (respuestaUsuario > casoActual.respuesta_correcta) {
+                                estadisticas.subTriaje++
+                            }
+                            // sobre-triaje: eligió nivel MÁS BAJO (más urgente)
+                            if (respuestaUsuario < casoActual.respuesta_correcta) {
+                                estadisticas.sobreTriaje++
+                            }
+
                             if (!estadisticas.casosRepaso.includes(casoActual.id)) {
                                 estadisticas.casosRepaso.push(casoActual.id)
                             }
@@ -359,13 +371,11 @@ fetch("casos.json")
             })
         })
 
-        //boton reintentar
         document.getElementById("btn-reintentar").addEventListener("click", () => {
             document.getElementById("modal-error").classList.add("oculto")
             if (window.iniciarTemporizador) window.iniciarTemporizador()
         })
 
-        //boton menu
         document.getElementById("btn-menu").addEventListener("click", () => {
             clearInterval(window.temporizador)
             document.getElementById("modal-error").classList.add("oculto")
@@ -373,20 +383,17 @@ fetch("casos.json")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
-        //boton sigue practicando
         document.getElementById("btn-siguiente").addEventListener("click", () => {
             document.getElementById("pantalla-3").classList.add("oculto")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
-        //botón menu pantalla 2
         document.getElementById("btn-menu-p2").addEventListener("click", () => {
             clearInterval(window.temporizador)
             pantalla2.classList.add("oculto")
             document.getElementById("pantalla-1").classList.remove("oculto")
         })
 
-        //menú hamburguesa — click con cierre al hacer click fuera
         const menuHamburguesa = document.getElementById("menu-hamburguesa")
         const menuDesplegable = document.getElementById("menu-desplegable")
 
@@ -400,7 +407,6 @@ fetch("casos.json")
             }
         })
 
-        //modo practica
         document.getElementById("modo-practica").addEventListener("click", () => {
             document.getElementById("menu-desplegable").classList.add("oculto")
             document.getElementById("pantalla-2").classList.add("oculto")
@@ -410,7 +416,6 @@ fetch("casos.json")
             clearInterval(window.temporizador)
         })
 
-        //botón mi progreso
         document.getElementById("btn-dashboard").addEventListener("click", () => {
             document.getElementById("menu-desplegable").classList.add("oculto")
             document.getElementById("pantalla-1").classList.add("oculto")
@@ -421,6 +426,9 @@ fetch("casos.json")
             document.getElementById("dash-total").textContent = estadisticas.total
             document.getElementById("dash-correctos").textContent = estadisticas.correctos
             document.getElementById("dash-fallos").textContent = estadisticas.fallos
+            document.getElementById("dash-subtriaje").textContent = estadisticas.subTriaje
+            document.getElementById("dash-sobretriaje").textContent = estadisticas.sobreTriaje
+
             const precision = estadisticas.total > 0 ? Math.round((estadisticas.correctos / estadisticas.total) * 100) : 0
             document.getElementById("dash-precision").textContent = precision + "%"
 
@@ -436,7 +444,6 @@ fetch("casos.json")
             document.getElementById("pantalla-dashboard").classList.remove("oculto")
         })
 
-        //botón cerrar dashboard
         document.getElementById("btn-cerrar-dashboard").addEventListener("click", () => {
             document.getElementById("pantalla-dashboard").classList.add("oculto")
             document.getElementById("pantalla-1").classList.remove("oculto")
