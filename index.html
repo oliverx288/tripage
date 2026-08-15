@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
+
     <header>
         <div class="logo">
             <img src="logo.png" alt="TriPage logo">
@@ -16,17 +17,21 @@
                 <span class="logo-nombre">TriPage</span>
             </div>
         </div>
+
         <div class="header-derecha">
             <span id="contador-progreso">0 / 20</span>
+
             <div class="menu-hamburguesa" id="menu-hamburguesa">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+
             <div class="menu-desplegable oculto" id="menu-desplegable">
                 <button class="menu-opcion" id="modo-practica">Modo práctica</button>
                 <button class="menu-opcion" id="btn-dashboard">Mi progreso</button>
             </div>
+
             <div class="idioma-selector">
                 <span class="idioma-activo">ES</span>
             </div>
@@ -38,6 +43,7 @@
         <!-- PANTALLA 1 -->
         <div id="pantalla-1">
             <p>Elige un caso para clasificar</p>
+
             <div class="filtros">
                 <button class="filtro activo">Todos</button>
                 <button class="filtro">Básico</button>
@@ -45,8 +51,14 @@
                 <button class="filtro">Difícil</button>
                 <button class="filtro">Avanzado</button>
             </div>
+
             <div class="grid-casos" id="grid-casos"></div>
+
+            <p class="aviso-educativo">
+                *Proyecto educativo. Los casos y resultados mostrados tienen finalidad exclusivamente formativa y no deben utilizarse para la toma de decisiones clínicas.
+            </p>
         </div>
+
 
         <!-- PANTALLA 2 -->
         <div id="pantalla-2" class="oculto">
@@ -55,10 +67,12 @@
                 <div class="caso-header-izquierda">
                     <span class="caso-numero"></span>
                 </div>
+
                 <button id="btn-menu-p2" class="btn-siguiente">Menú</button>
             </div>
 
             <div class="caso-contenido">
+
                 <div class="caso-clinico">
                     <span class="caso-seccion-titulo">Presentación clínica</span>
                     <h2></h2>
@@ -67,91 +81,126 @@
 
                 <div class="caso-constantes">
                     <span class="caso-seccion-titulo">Constantes vitales</span>
+
                     <div class="constantes-grid">
+
                         <div class="constante">
                             <span class="constante-valor"></span>
                             <span class="constante-label">Temp.</span>
                         </div>
+
                         <div class="constante">
                             <span class="constante-valor"></span>
                             <span class="constante-label">FC bpm</span>
                         </div>
+
                         <div class="constante">
                             <span class="constante-valor"></span>
                             <span class="constante-label">TA</span>
                         </div>
+
                         <div class="constante">
                             <span class="constante-valor"></span>
                             <span class="constante-label">SatO₂</span>
                         </div>
+
                     </div>
                 </div>
+
             </div>
 
             <div class="manchester">
+
                 <p>Selecciona el nivel de triaje Manchester:</p>
+
                 <div class="manchester-botones">
+
                     <button class="manchester-btn nivel-1">
                         <span class="nivel-numero">I</span>
                         <span class="nivel-nombre">Inmediato</span>
                     </button>
+
                     <button class="manchester-btn nivel-2">
                         <span class="nivel-numero">II</span>
                         <span class="nivel-nombre">Muy urgente</span>
                     </button>
+
                     <button class="manchester-btn nivel-3">
                         <span class="nivel-numero">III</span>
                         <span class="nivel-nombre">Urgente</span>
                     </button>
+
                     <button class="manchester-btn nivel-4">
                         <span class="nivel-numero">IV</span>
                         <span class="nivel-nombre">Estándard</span>
                     </button>
+
                     <button class="manchester-btn nivel-5">
                         <span class="nivel-numero">V</span>
                         <span class="nivel-nombre">No urgente</span>
                     </button>
+
                 </div>
+
                 <div class="barra-tiempo-wrapper">
                     <div class="barra-tiempo">
                         <div class="barra-progreso"></div>
                     </div>
+
                     <span class="tiempo-texto">3:00 restantes</span>
                 </div>
+
             </div>
 
         </div>
+
 
         <!-- PANTALLA 3 — CORRECTO -->
         <div id="pantalla-3" class="oculto">
 
             <div class="caso-header">
+
                 <div class="caso-header-izquierda">
                     <span class="caso-numero"></span>
                 </div>
+
                 <span class="resultado-correcto">Correcto</span>
+
             </div>
 
             <div class="resultado-nivel">
+
                 <div class="nivel-badge nivel-1">
                     <span class="nivel-romano"></span>
                 </div>
+
                 <div class="resultado-nivel-info">
                     <span class="resultado-nivel-titulo"></span>
                     <span class="resultado-nivel-subtitulo"></span>
                 </div>
+
             </div>
 
             <div class="resultado-explicacion">
+
                 <div class="resultado-porque">
-                    <span class="resultado-porque-titulo">¿Por qué este nivel?</span>
+
+                    <span class="resultado-porque-titulo">
+                        ¿Por qué este nivel?
+                    </span>
+
                     <p class="resultado-porque-texto"></p>
+
                 </div>
+
             </div>
 
             <div class="resultado-sabias">
+
                 <span class="sabias-titulo">¿Sabías que?</span>
+
                 <p class="sabias-texto"></p>
+
             </div>
 
             <button id="btn-siguiente" class="btn-siguiente">
@@ -160,83 +209,192 @@
 
         </div>
 
+
         <!-- PANTALLA DASHBOARD -->
         <div id="pantalla-dashboard" class="oculto">
 
             <div class="caso-header">
+
                 <div class="caso-header-izquierda">
                     <span class="caso-numero">Mi progreso</span>
                 </div>
-                <button id="btn-cerrar-dashboard" class="btn-siguiente">← Volver</button>
+
+                <button id="btn-cerrar-dashboard" class="btn-siguiente">
+                    ← Volver
+                </button>
+
             </div>
 
             <div class="dashboard-grid">
+
                 <div class="dashboard-card">
                     <span class="dashboard-label">Casos realizados</span>
                     <span class="dashboard-numero" id="dash-total">0</span>
                 </div>
+
                 <div class="dashboard-card">
                     <span class="dashboard-label">Correctos</span>
                     <span class="dashboard-numero" id="dash-correctos">0</span>
                 </div>
+
                 <div class="dashboard-card">
                     <span class="dashboard-label">Precisión</span>
                     <span class="dashboard-numero" id="dash-precision">0%</span>
                 </div>
+
                 <div class="dashboard-card">
                     <span class="dashboard-label">Fallos</span>
                     <span class="dashboard-numero" id="dash-fallos">0</span>
                 </div>
+
+                <div class="dashboard-card">
+                    <span class="dashboard-label">SUB TRIAJE</span>
+                    <span class="dashboard-numero" id="dash-subtriaje">0</span>
+                </div>
+
+                <div class="dashboard-card">
+                    <span class="dashboard-label">SOBRE TRIAJE</span>
+                    <span class="dashboard-numero" id="dash-sobretriaje">0</span>
+                </div>
+
             </div>
+
 
             <div class="dashboard-niveles">
-                <span class="dashboard-titulo-seccion">Aciertos por nivel Manchester</span>
+
+                <span class="dashboard-titulo-seccion">
+                    Aciertos por nivel Manchester
+                </span>
+
                 <div class="dashboard-barra-wrapper">
-                    <span class="dashboard-nivel-label">Nivel I </span>
-                    <div class="dashboard-barra"><div class="dashboard-barra-fill nivel-1" id="barra-nivel-1"></div></div>
+
+                    <span class="dashboard-nivel-label">
+                        Nivel I
+                    </span>
+
+                    <div class="dashboard-barra">
+                        <div
+                            class="dashboard-barra-fill nivel-1"
+                            id="barra-nivel-1">
+                        </div>
+                    </div>
+
                     <span id="texto-nivel-1">0</span>
+
                 </div>
+
+
                 <div class="dashboard-barra-wrapper">
-                    <span class="dashboard-nivel-label">Nivel II</span>
-                    <div class="dashboard-barra"><div class="dashboard-barra-fill nivel-2" id="barra-nivel-2"></div></div>
+
+                    <span class="dashboard-nivel-label">
+                        Nivel II
+                    </span>
+
+                    <div class="dashboard-barra">
+                        <div
+                            class="dashboard-barra-fill nivel-2"
+                            id="barra-nivel-2">
+                        </div>
+                    </div>
+
                     <span id="texto-nivel-2">0</span>
+
                 </div>
+
+
                 <div class="dashboard-barra-wrapper">
-                    <span class="dashboard-nivel-label">Nivel III</span>
-                    <div class="dashboard-barra"><div class="dashboard-barra-fill nivel-3" id="barra-nivel-3"></div></div>
+
+                    <span class="dashboard-nivel-label">
+                        Nivel III
+                    </span>
+
+                    <div class="dashboard-barra">
+                        <div
+                            class="dashboard-barra-fill nivel-3"
+                            id="barra-nivel-3">
+                        </div>
+                    </div>
+
                     <span id="texto-nivel-3">0</span>
+
                 </div>
+
+
                 <div class="dashboard-barra-wrapper">
-                    <span class="dashboard-nivel-label">Nivel IV</span>
-                    <div class="dashboard-barra"><div class="dashboard-barra-fill nivel-4" id="barra-nivel-4"></div></div>
+
+                    <span class="dashboard-nivel-label">
+                        Nivel IV
+                    </span>
+
+                    <div class="dashboard-barra">
+                        <div
+                            class="dashboard-barra-fill nivel-4"
+                            id="barra-nivel-4">
+                        </div>
+                    </div>
+
                     <span id="texto-nivel-4">0</span>
+
                 </div>
+
+
                 <div class="dashboard-barra-wrapper">
-                    <span class="dashboard-nivel-label">Nivel V</span>
-                    <div class="dashboard-barra"><div class="dashboard-barra-fill nivel-5" id="barra-nivel-5"></div></div>
+
+                    <span class="dashboard-nivel-label">
+                        Nivel V
+                    </span>
+
+                    <div class="dashboard-barra">
+                        <div
+                            class="dashboard-barra-fill nivel-5"
+                            id="barra-nivel-5">
+                        </div>
+                    </div>
+
                     <span id="texto-nivel-5">0</span>
+
                 </div>
+
             </div>
 
+
             <div class="dashboard-feedback" id="dashboard-feedback">
+
                 <span id="feedback-mensaje"></span>
+
             </div>
 
         </div>
 
-        <!-- popup error -->
+
+        <!-- POPUP ERROR -->
         <div id="modal-error" class="oculto">
+
             <div class="modal-caja">
-                <p class="modal-titulo">Incorrecto</p>
+
+                <p class="modal-titulo">
+                    Incorrecto
+                </p>
+
                 <div class="modal-botones">
-                    <button id="btn-reintentar">Intentar de nuevo</button>
-                    <button id="btn-menu">Volver al menú</button>
+
+                    <button id="btn-reintentar">
+                        Intentar de nuevo
+                    </button>
+
+                    <button id="btn-menu">
+                        Volver al menú
+                    </button>
+
                 </div>
+
             </div>
+
         </div>
 
     </main>
 
     <script src="app.js"></script>
+
 </body>
 </html>
