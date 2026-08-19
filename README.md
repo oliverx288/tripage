@@ -26,11 +26,6 @@ The project was inspired by a **2026 multicenter study across 7 hospitals in Ast
 * CSS3
 * JavaScript
 
-**Data**
-
-* Supabase
-* PostgreSQL
-
 **Tools**
 
 * Git
