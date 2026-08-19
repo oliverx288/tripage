@@ -1,6 +1,6 @@
 # TriPage
 
-### Clinical Triage Training Simulator
+Clinical Triage Training Simulator
 
 TriPage is a free web simulator for practising the **Manchester Triage System** through interactive clinical cases.
 
