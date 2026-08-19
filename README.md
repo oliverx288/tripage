@@ -8,10 +8,6 @@ The project was inspired by a **2026 multicenter study across 7 hospitals in Ast
 
 > Educational project. The cases and results are for training purposes only and must not be used for real clinical decision making.
 
-## Preview
-
-![TriPage Preview](./assets/tripage-preview.png)
-
 ## Features
 
 * Interactive triage cases
